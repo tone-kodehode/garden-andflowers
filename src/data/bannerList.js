@@ -1,4 +1,12 @@
 /**
+ * @typedef {Object} ListItemButton
+ * @property {string} label - button label
+ * @property {string} url - button URL link
+ * @property {string} position - button position 
+ * @property {string} className - styles CSS class name
+ */
+
+/**
  * @typedef {Object} ListItem
  * @property {number} id - items unique identifier
  * @property {string} type - type of the item ('image' or 'text')
@@ -56,8 +64,14 @@ export const bannerList = {
                 'Oops!', 
                 '404 Page not found',
             ],
-            buttonLeftLabel: 'See our selection',
-            buttonUrl: '/',
+            buttons: [
+                {
+                  label: 'See our selection',
+                  url: '/flowers',
+                  position: 'topLeft',
+                  className: "buttonLeft",
+                },
+            ],
         },
     ]
 }

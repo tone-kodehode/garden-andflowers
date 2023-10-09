@@ -1,0 +1,74 @@
+
+button {
+    border-radius: 8px;
+    border: 0.01px solid transparent;
+    padding: 1em 1.4em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    text-shadow: 5px 5px 15px var(--DarkColor);
+    color: var(--lightColor);
+    border-color: var(--GreenPastelDarkTransparent);
+    background-color: var(--GreenTransparent);
+    /* backdrop-filter: blur(2px); */
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  
+  button:hover {
+    background-color: var(--Green);
+    color: var(--white);
+  }
+  
+  button:focus,
+  button:focus-visible {
+    outline: 40px auto -webkit-focus-ring-color;
+  }
+
+  @media only screen and (max-width: 768px) {
+    button {
+      font-size: 0.8rem;
+      padding: 0.8em 1.2em;
+    }
+}
+
+      /* font-size: 18px;
+    text-shadow: 5px 5px 10px black;
+    font-size: 300;
+    color: whitesmoke;
+    border-radius: 8px;
+    background-color: var(--GreenDark);
+    
+    padding: .6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    border: 1px solid transparent;
+    border-color: var(--GreenPastelDark) */
+   
+    /* border-color: rgb(67, 125, 67); */
+
+    /* 
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a; 
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--greenPastelDark);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+  

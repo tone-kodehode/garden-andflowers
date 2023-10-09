@@ -1,5 +1,6 @@
 .container {
-    border: 1px solid red;
+    border: 1px solid transparent;
+   
 }
 
 .wrapper {
@@ -7,14 +8,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .left {
     flex: 1;
     display: flex;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .searchContainer {
@@ -22,41 +23,41 @@
     align-items: center;
     margin-left: 25px;
     padding: 5px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .logoContainer {
     display: flex;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .language {
     font-size: 24;
     cursor: pointer;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .input {
     border: none;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .search {
     color: var(--Grey);
     font-size: 16px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .center {
     flex: 1;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .title {
     font-weight: bold;
     text-align: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .right {
@@ -64,7 +65,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .menu {
@@ -72,7 +73,7 @@
     cursor: pointer;
     margin-left: 25px;
     white-space: nowrap;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 

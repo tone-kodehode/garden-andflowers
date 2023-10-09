@@ -12,25 +12,26 @@
     top: 55px;
     left: 85px;
     font-size: 2rem;
-    text-shadow: 5px 5px 10px black;
-    font-weight: 300;
+    text-shadow: 5px 5px 15px var(--DarkColor);
+    font-weight: 500;
     transition: font-size 0.2s ease;
     transition: left 0.2s ease;
     /* border: 1px solid green; */
 }
 
-.buttonLeftLabel {
-    border: 1px solid red;
+.buttonLeft { 
+    position: absolute;
+    bottom: 75px;
+    left: 85px;
+    transition: font-size 0.2s ease;
+    transition: left 0.2s ease;
 }
 
-.ButtonLeft {
-    border: 1px solid greenyellow;
-}
-  
 .imageUrl {
     width: 100%;
     /* border: 1px solid green; */
 }
+
 
 /* Text Banner Styles */
 
@@ -57,5 +58,11 @@
         font-size: 100%; 
         left: 8%;
         /* border: 1px solid green; */
+    }
+
+    .buttonLeft { 
+        position: absolute;
+        bottom: 55px;
+        left: 43px;
     }
 }

@@ -1,19 +1,16 @@
-import { PropTypes } from '@mui/material';
+import PropTypes from 'prop-types';
 
-import ButtonStyles from '../Button/Button.module.css'
-import { Link } from 'react-router-dom';
+import ButtonsStyles from '../../styles/ButtonsStyles/Buttons.module.css'
 
-export const Button = ({ label, to }) => {
+export const Button = ({ label }) => {
   return (
-    <Link to={to}>
-      <button className={ButtonStyles.ButtonLeft}>
-        {label}
-      </button>
-    </Link>
+      <button className={ButtonsStyles.button}>{label}</button>
+  
   );
 };
 
 Button.propTypes = {
     label: PropTypes.string.isRequired,
-    to: PropTypes.string.isRequired,
-  };
+    // to: PropTypes.string.isRequired,
+    // onClick: PropTypes.string.isRequired
+};

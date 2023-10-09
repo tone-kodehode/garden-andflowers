@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import { Button } from '../Button/Button';
 import BannerStyles from '../../styles/BannerStyles/Banner.module.css'
 // mapArray function with two arguments, first argument: paragraphs (array of paragraphs) to render and secend a callback (paragraph, index) as arrow function to applie to each element in the paragraphs array,paragraph parameter placed the content inside the "<p>" element, key (index) attribute is unique identifier of each element in paragraphs array 
 import mapArray from '../../utils/mapArray';
@@ -11,7 +11,9 @@ export const TextBanner = ({ title, paragraphs }) => {
     <section className={BannerStyles.textSection}>
       <h2 className={BannerStyles.title}>{title}</h2>
       {mapArray(paragraphs, (paragraph, index) => (
-        <p key={index} className={BannerStyles.paragraphs}>
+        <p 
+          key={index} 
+          className={BannerStyles.paragraphs}>
           {paragraph}
         </p>
       ))}
@@ -20,12 +22,23 @@ export const TextBanner = ({ title, paragraphs }) => {
 }
 
 // functional component that takes imageUrl, alt, title, topLeftTagline, ButtonLeft and url as props
-export const ImageBanner = ({ imageUrl, alt, topLeftTagline}) => {
+export const ImageBanner = ({ imageUrl, alt, topLeftTagline, buttons }) => {
   return (
     <section className={BannerStyles.imgSection}>
       <img className={BannerStyles.imageUrl} src={imageUrl} alt={alt} />
       <div className={BannerStyles.topLeftTagline}>{topLeftTagline}</div>
-
+      {buttons && buttons.length > 0 && (
+        <div className={BannerStyles.buttonLeft}>
+          {mapArray(buttons, (button, index) => (
+            <Button
+              key={index}
+              label={button.label}
+              onClick={() => window.location.href = button.url}
+              className={BannerStyles.button}
+            />
+          ))}
+        </div>
+      )}
     </section>
   );
 };
@@ -42,8 +55,8 @@ ImageBanner.propTypes = {
   alt: PropTypes.string.isRequired, // alt is a required string prop
   title: PropTypes.string.isRequired, // title is a required string prop
   topLeftTagline: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]), // topLeftTagline can be a string or an array of strings
-  buttonLeftLabel: PropTypes.string, // ButtonLeft is an optional string prop
+  label: PropTypes.string, // buttonLeft is optional string prop
   onClick: PropTypes.func, // onClick is an optional function prop for the button click handler
-  buttonUrl: PropTypes.string, // url is an optional string prop
+  Url: PropTypes.string, // url is an optional string prop
 };
 

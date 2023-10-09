@@ -24,8 +24,7 @@ export const BannerDisplay = ({id, type}) => {
            alt={selectedBanner.alt}
            title={selectedBanner.title}
            topLeftTagline={selectedBanner.topLeftTagline}
-           buttonLeftLabel={selectedBanner.buttonLeftLabel}
-           url={selectedBanner.url}
+           buttons={selectedBanner.buttons}
          />
        )}
        {type === 'text' && (
