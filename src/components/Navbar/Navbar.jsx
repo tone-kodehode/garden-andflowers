@@ -6,6 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import Badge from '@mui/material/Badge';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
+
 import NavbarStyles from '/src/styles/NavbarStyles/Navbar.module.css'
 
 const Navbar = () => {
@@ -35,7 +36,7 @@ const Navbar = () => {
         <div className={NavbarStyles.left}> 
           <span className={NavbarStyles.language}>EN</span> 
           <div className={NavbarStyles.searchContainer}>
-            <SearchIcon className={NavbarStyles.search}/>
+            <SearchIcon className={NavbarStyles.search} color="action"/>
             <input type="text" className={NavbarStyles.input}/>           
           </div>
         </div>
@@ -43,8 +44,8 @@ const Navbar = () => {
           <div className={NavbarStyles.menu}>REGISTER</div>
           <div className={NavbarStyles.menu}>SIGN IN</div>
           <div className={NavbarStyles.menu}>
-            <Badge badgeContent={4} color="primary">
-              <ShoppingCartOutlinedIcon color="action" />
+            <Badge badgeContent={4} color="success">
+              <ShoppingCartOutlinedIcon className={NavbarStyles.cart}  color="action"/>
             </Badge>
           </div>      
         </div>

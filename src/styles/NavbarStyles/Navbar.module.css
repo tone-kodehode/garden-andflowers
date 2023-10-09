@@ -49,6 +49,10 @@
     /* border: 1px solid red; */
 }
 
+.cart {
+    border-color: pink;
+}
+
 .center {
     flex: 1;
     /* border: 1px solid red; */
