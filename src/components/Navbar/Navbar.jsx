@@ -13,17 +13,41 @@ const Navbar = () => {
   
   return (
     <>
+    <div className={NavbarStyles.container}>
+      <div className={NavbarStyles.wrapper}>
+        <div className={NavbarStyles.left}> 
+          <span className={NavbarStyles.language}>EN</span> 
+          
+        </div>
+        
+        <div className={NavbarStyles.right}>
+          <div className={NavbarStyles.menu}>REGISTER</div>
+          <div className={NavbarStyles.menu}>SIGN IN</div>
+             
+        </div>
+      </div>
+    </div>
+
       <div className={NavbarStyles.container}>
       <div className={NavbarStyles.wrapper}>
         <div className={NavbarStyles.left}> 
           <div className={NavbarStyles.logoContainer}>
             <Logo />
           </div>
+          <div className={NavbarStyles.searchContainer}>
+            <SearchIcon className={NavbarStyles.search} color="action"/>
+            <input type="text" className={NavbarStyles.input}/>           
+          </div>
         </div>
         <div className={NavbarStyles.center}>
           <h1 className={NavbarStyles.title}>{coData.title}</h1>
         </div>
         <div className={NavbarStyles.right}>
+        <div className={NavbarStyles.menu}>
+            <Badge badgeContent={4} color="success">
+              <ShoppingCartOutlinedIcon className={NavbarStyles.cart}  color="action"/>
+            </Badge>
+          </div>  
           <div className={NavbarStyles.menu}>
             <MenuRoundedIcon style={{ fontSize: 50 }}/>
           </div>       
@@ -31,26 +55,7 @@ const Navbar = () => {
       </div>
     </div>
 
-    <div className={NavbarStyles.container}>
-      <div className={NavbarStyles.wrapper}>
-        <div className={NavbarStyles.left}> 
-          <span className={NavbarStyles.language}>EN</span> 
-          <div className={NavbarStyles.searchContainer}>
-            <SearchIcon className={NavbarStyles.search} color="action"/>
-            <input type="text" className={NavbarStyles.input}/>           
-          </div>
-        </div>
-        <div className={NavbarStyles.right}>
-          <div className={NavbarStyles.menu}>REGISTER</div>
-          <div className={NavbarStyles.menu}>SIGN IN</div>
-          <div className={NavbarStyles.menu}>
-            <Badge badgeContent={4} color="success">
-              <ShoppingCartOutlinedIcon className={NavbarStyles.cart}  color="action"/>
-            </Badge>
-          </div>      
-        </div>
-      </div>
-    </div>
+    
     </>
     
   )
