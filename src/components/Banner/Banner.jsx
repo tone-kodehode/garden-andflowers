@@ -20,14 +20,12 @@ export const TextBanner = ({ title, paragraphs }) => {
 }
 
 // functional component that takes imageUrl, alt, title, topLeftTagline, ButtonLeft and url as props
-export const ImageBanner = ({ imageUrl, alt, title, topLeftTagline, ButtonLeft, url }) => {
+export const ImageBanner = ({ imageUrl, alt, topLeftTagline}) => {
   return (
     <section className={BannerStyles.imgSection}>
       <img className={BannerStyles.imageUrl} src={imageUrl} alt={alt} />
       <div className={BannerStyles.topLeftTagline}>{topLeftTagline}</div>
-      {/* <Link to="/flowers">
-//           <ButtonLeft className={BannerStyles.buttonLeftLabel} />
-//         </Link>   */}
+
     </section>
   );
 };
