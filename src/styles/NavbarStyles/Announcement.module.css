@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: var(--Green);
+    font-size: 14px;
+    color: var(--LightColor);
+    font-weight: 500; 
+}

@@ -1,0 +1,61 @@
+/* Img Banner Styles */
+
+.imgSection {
+    position: relative;
+    color: var(--LightColor);
+    /* border: 1px solid green; */
+ 
+}
+
+.topLeftTagline {
+    position: absolute;
+    top: 55px;
+    left: 85px;
+    font-size: 2rem;
+    text-shadow: 5px 5px 10px black;
+    font-weight: 300;
+    transition: font-size 0.2s ease;
+    transition: left 0.2s ease;
+    /* border: 1px solid green; */
+}
+
+.buttonLeftLabel {
+    border: 1px solid red;
+}
+
+.ButtonLeft {
+    border: 1px solid greenyellow;
+}
+  
+.imageUrl {
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+/* Text Banner Styles */
+
+.textSection {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 80px;
+    /* border: 1px solid green; */
+}
+
+.title {
+    text-align: start;
+    /* border: 1px solid green; */
+}
+
+.paragraphs {
+    text-align: start;
+    padding-top: 20px;
+    /* border: 1px solid green; */
+}
+
+@media only screen and (max-width: 968px) {
+    .topLeftTagline {
+        font-size: 100%; 
+        left: 8%;
+        /* border: 1px solid green; */
+    }
+}

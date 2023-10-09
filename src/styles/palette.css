@@ -1,0 +1,17 @@
+/* pseudo-class, - root element with higher specificity then html */
+
+:root {
+    --LightColor: #FCFCFC;
+    --DarkColor: #01090a;
+    --tintDark: #000304;
+
+    --Green: #345959;
+    --GreenDark: #224040;
+    --GreenPastel: #bad9d6;
+    --GreenPastelDark: #88bf90;
+
+    --GreyTint0: #666b6c;
+    --Grey: #808484;
+    --GreyTint2: #999c9d;
+    --GreyTint3: #b2b5b5;
+}
