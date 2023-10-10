@@ -1,5 +1,7 @@
 .displayContaner {
-    border: 1px solid rebeccapurple;
+    /* border: 5px solid rebeccapurple; */
     display: flex;
     flex-direction: row;
+    overflow: auto;
 }
+

@@ -3,13 +3,13 @@ export const categoryList = {
         {
             id: 0,
             type: 'image',
-            title: "FLOWERPOTS",
+            title: "Outdoor Planters",
             imageUrl: "/garden-andflowers/src/assets/ImgCategory/640hagepotter.png",
-            alt: "Flowerpots",
-            category: "pots",
+            alt: "Flower Pots",
+            category: "Outdoor Planters",
             buttons: [
                 {
-                  label: 'Shop Now',
+                  label: 'Order Planters',
                   url: '/',
                   className: "buttonContainer",
                 },
@@ -18,13 +18,13 @@ export const categoryList = {
         }, {
             id: 1,
             type: 'image',
-            title: "FLOWERS",
+            title: "Flowers",
             imageUrl: "/garden-andflowers/src/assets/ImgCategory/Potes.png",
             alt: "Flowers",
             category: "flowers",
             buttons: [
                 {
-                  label: 'Shop Now',
+                  label: 'Order Flowers',
                   url: '/',
                   className: "buttonContainer",
                 },
@@ -32,13 +32,13 @@ export const categoryList = {
         },{
             id: 2,
             type: 'image',
-            title: "GARDEN UTILITIES",
+            title: "Garden Utilities",
             imageUrl: "/garden-andflowers/src/assets/ImgCategory/hageutstyr.png",
-            alt: "Garden utilities",
-            category: "gardenUtilities",
+            alt: "Garden Utilities",
+            category: "Garden Utilities",
             buttons: [
                 {
-                  label: 'Shop Now',
+                  label: 'Order Utilities',
                   url: '/',
                   className: "buttonContainer",
                 },
@@ -46,13 +46,13 @@ export const categoryList = {
         },{
             id: 3,
             type: 'image',
-            title: "GARDEN BLOG",
+            title: "Garden Blog",
             imageUrl: "/garden-andflowers/src/assets/ImgCategory/rosebed.png",
             alt: "Garden blog",
             category: "gardenBlog",
             buttons: [
                 {
-                  label: 'Shop Now',
+                  label: 'Greener Everyday',
                   url: '/',
                   className: "buttonContainer",
                 },

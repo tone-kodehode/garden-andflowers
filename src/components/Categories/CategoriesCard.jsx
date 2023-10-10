@@ -3,14 +3,13 @@ import PropTypes from 'prop-types'
 
 import { Button } from '../Button/Button'
 import mapArray from '../../utils/mapArray'
-
 import CategoriesCardStyles from '../../styles/CategoriesStyles/CategoriesCard.module.css'
 export const CategoriesCard = ({ imageUrl, alt, title, buttons, label }) => {
   return (
     <section className={CategoriesCardStyles.cardContainer}>
       <img className={CategoriesCardStyles.imageUrl} src={imageUrl} alt={alt} />
       <div className={CategoriesCardStyles.infoContainer}>
-        <h2 className={CategoriesCardStyles.title}>{title}</h2>
+        <h1 className={CategoriesCardStyles.title}>{title}</h1>
         {buttons && buttons.length > 0 && (
           <div className={CategoriesCardStyles.buttonContainer}>
             {mapArray(buttons, (button, index) => (

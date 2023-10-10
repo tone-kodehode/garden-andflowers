@@ -31,10 +31,10 @@ export const bannerList = {
             imageUrl: '/garden-andflowers/public/ImgBanner/tulip1904-804.jpg', 
             alt: 'Home page, Garden & Flowers',
             title: 'Garden & Flowers',
-            topLeftTagline: 'A greener everyday life',
+            topLeftTagline: 'A Greener Everyday Life',
             buttons: [
                 {
-                  label: 'See our selection',
+                  label: 'See Our Selection',
                   url: '/flowers',
                   position: 'topLeft',
                   className: "buttonContainer",
@@ -66,7 +66,7 @@ export const bannerList = {
             ],
             buttons: [
                 {
-                  label: 'See our selection',
+                  label: 'See Our Selection',
                   url: '/flowers',
                   position: 'topLeft',
                   className: "buttonContainer",
