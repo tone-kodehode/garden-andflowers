@@ -1,4 +1,5 @@
 // rafc
+import PropTypes from 'prop-types'
 
 import { Button } from '../Button/Button'
 import mapArray from '../../utils/mapArray'
@@ -28,3 +29,14 @@ export const Categories = ({ imageUrl, alt, title, buttons }) => {
   )
 }
 
+Categories.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  buttons: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
