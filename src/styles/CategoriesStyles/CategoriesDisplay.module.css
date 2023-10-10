@@ -1,0 +1,5 @@
+.displayContaner {
+    border: 1px solid rebeccapurple;
+    display: flex;
+    flex-direction: row;
+}

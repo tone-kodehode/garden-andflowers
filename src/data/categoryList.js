@@ -9,7 +9,7 @@ export const categoryList = {
             category: "pots",
             buttons: [
                 {
-                  label: 'See our selection',
+                  label: 'Shop Now',
                   url: '/',
                   className: "buttonContainer",
                 },
@@ -24,7 +24,7 @@ export const categoryList = {
             category: "flowers",
             buttons: [
                 {
-                  label: 'See our selection',
+                  label: 'Shop Now',
                   url: '/',
                   className: "buttonContainer",
                 },
@@ -38,7 +38,7 @@ export const categoryList = {
             category: "gardenUtilities",
             buttons: [
                 {
-                  label: 'See our selection',
+                  label: 'Shop Now',
                   url: '/',
                   className: "buttonContainer",
                 },
@@ -52,7 +52,7 @@ export const categoryList = {
             category: "gardenBlog",
             buttons: [
                 {
-                  label: 'See our selection',
+                  label: 'Shop Now',
                   url: '/',
                   className: "buttonContainer",
                 },

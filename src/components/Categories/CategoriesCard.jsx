@@ -5,7 +5,7 @@ import { Button } from '../Button/Button'
 import mapArray from '../../utils/mapArray'
 
 import CategoriesCardStyles from '../../styles/CategoriesStyles/CategoriesCard.module.css'
-export const CategoriesCard = ({ imageUrl, alt, title, buttons }) => {
+export const CategoriesCard = ({ imageUrl, alt, title, buttons, label }) => {
   return (
     <section className={CategoriesCardStyles.cardContainer}>
       <img className={CategoriesCardStyles.imageUrl} src={imageUrl} alt={alt} />
@@ -16,11 +16,10 @@ export const CategoriesCard = ({ imageUrl, alt, title, buttons }) => {
             {mapArray(buttons, (button, index) => (
               <Button
                 key={index}
+                label={button.label}
                 className={CategoriesCardStyles.button}
                 onClick={() => window.location.href = button.url} 
-              >
-                {button.label}
-              </Button>
+              />
             ))}
           </div>
         )}    

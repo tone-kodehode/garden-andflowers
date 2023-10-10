@@ -1,7 +1,7 @@
 .cardContainer {
     flex: 1;
     margin: 3px;
-    background-color: lightblue;
+    border: 1px solid green;
     height: 70vh;
     position: relative;
 }
@@ -14,7 +14,7 @@
 }
 
 .infoContainer {
-    background-color: 1px solid rebeccapurple;
+    border: 1px solid green;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,8 @@
 
 .buttonContainer {
     border: 1px solid green;
-    height: 50px;
+    height: 100px;
     width: 50px;
+    color: aliceblue;
 }
 
