@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { Button } from '../Button/Button'
 import mapArray from '../../utils/mapArray'
 import CategoriesCardStyles from '../../styles/CategoriesStyles/CategoriesCard.module.css'
-export const CategoriesCard = ({ imageUrl, alt, title, buttons, label }) => {
+export const CategoriesCard = ({ imageUrl, alt, title, buttons }) => {
   return (
     <section className={CategoriesCardStyles.cardContainer}>
       <img className={CategoriesCardStyles.imageUrl} src={imageUrl} alt={alt} />
