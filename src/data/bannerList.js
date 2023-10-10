@@ -28,7 +28,7 @@ export const bannerList = {
             id: 0,
             type: 'image',
             className: "imgSection",
-            imageUrl: '/src/assets/ImgBanner/tulip1904-804.jpg', 
+            imageUrl: './src/assets/ImgBanner/tulip1904-804.jpg', 
             alt: 'Home page, Garden & Flowers',
             title: 'Garden & Flowers',
             topLeftTagline: 'A greener everyday life',
@@ -56,7 +56,7 @@ export const bannerList = {
             id: 2,
             type: 'image',
             className: 'imgSection',
-            imageUrl: '/src/assets/ImgBanner/peony1904-804.jpg', 
+            imageUrl: './src/assets/ImgBanner/peony1904-804.jpg', 
             alt: 'Page not found',
             title: 'Page not fond',
             topLeftTagline: 

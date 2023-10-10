@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
     <div className={NavbarStyles.container}>
-      <div className={NavbarStyles.wrapper}>
+      <div className={NavbarStyles.navContainer}>
         <div className={NavbarStyles.left}> 
           <span className={NavbarStyles.language}>EN</span> 
           
@@ -29,7 +29,7 @@ const Navbar = () => {
     </div>
 
       <div className={NavbarStyles.container}>
-      <div className={NavbarStyles.wrapper}>
+      <div className={NavbarStyles.navContainer}>
         <div className={NavbarStyles.left}> 
           <div className={NavbarStyles.logoContainer}>
             <Logo />
