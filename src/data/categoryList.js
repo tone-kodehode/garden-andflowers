@@ -2,8 +2,10 @@ export const categoryList = {
     "listArray": [
         {
             id: 0,
-            title: "FLOWERPOT",
+            type: 'image',
+            title: "FLOWERPOTS",
             imageUrl: "/garden-andflowers/src/assets/ImgCategory/640hagepotter.png",
+            alt: "Flowerpots",
             category: "pots",
             buttons: [
                 {
@@ -15,8 +17,10 @@ export const categoryList = {
            
         }, {
             id: 1,
+            type: 'image',
             title: "FLOWERS",
             imageUrl: "/garden-andflowers/src/assets/ImgCategory/Potes.png",
+            alt: "Flowers",
             category: "flowers",
             buttons: [
                 {
@@ -27,9 +31,11 @@ export const categoryList = {
             ],
         },{
             id: 2,
+            type: 'image',
             title: "GARDEN UTILITIES",
             imageUrl: "/garden-andflowers/src/assets/ImgCategory/hageutstyr.png",
-            category: "utilities",
+            alt: "Garden utilities",
+            category: "gardenUtilities",
             buttons: [
                 {
                   label: 'See our selection',
@@ -39,8 +45,10 @@ export const categoryList = {
             ],
         },{
             id: 3,
+            type: 'image',
             title: "GARDEN BLOG",
             imageUrl: "/garden-andflowers/src/assets/ImgCategory/rosebed.png",
+            alt: "Garden blog",
             category: "gardenBlog",
             buttons: [
                 {
