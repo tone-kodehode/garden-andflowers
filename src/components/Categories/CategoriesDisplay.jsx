@@ -2,7 +2,9 @@
 
 export const CategoriesDisplay = () => {
   return (
-    <div>CategoriesDisplay</div>
+    <div className="container">
+
+    </div>
   )
 }
 
