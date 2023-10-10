@@ -9,7 +9,7 @@ button {
     text-shadow: 5px 5px 15px var(--DarkColor);
     color: var(--lightColor);
     border-color: var(--GreenPastelDarkTransparent);
-    background-color: var(--GreenTransparent);
+    background-color: var(--GreenPastelDarkTransparent);
     /* backdrop-filter: blur(2px); */
     cursor: pointer;
     transition: border-color 0.25s;

@@ -1,0 +1,28 @@
+.cardContainer {
+    border-color: 1px solid rebeccapurple;
+}
+.ProductCard {
+    border-color: 1px solid rebeccapurple;
+}
+.imageUrl {
+    border-color: 1px solid rebeccapurple;
+}
+.title {
+    border-color: 1px solid rebeccapurple;
+}
+.shortDescription {
+    border-color: 1px solid rebeccapurple;
+}
+.cartContainer {
+    border-color: 1px solid rebeccapurple;
+}
+
+.price {
+    border-color: 1px solid rebeccapurple;
+}
+.currency {
+    border-color: 1px solid rebeccapurple;
+}
+.cart {
+    border-color: 1px solid rebeccapurple;
+}

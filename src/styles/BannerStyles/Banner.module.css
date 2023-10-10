@@ -1,6 +1,6 @@
 /* Img Banner Styles */
 
-.imgSection {
+.imgContainer {
     position: relative;
     color: var(--LightColor);
     /* border: 1px solid green; */
@@ -19,7 +19,7 @@
     /* border: 1px solid green; */
 }
 
-.buttonLeft { 
+.buttonContainer { 
     position: absolute;
     bottom: 75px;
     left: 85px;
@@ -35,7 +35,7 @@
 
 /* Text Banner Styles */
 
-.textSection {
+.textContainer {
     display: flex;
     flex-direction: column;
     padding: 50px 80px;
@@ -60,7 +60,7 @@
         /* border: 1px solid green; */
     }
 
-    .buttonLeft { 
+    .buttonContainer { 
         position: absolute;
         bottom: 55px;
         left: 43px;

@@ -8,7 +8,7 @@ import mapArray from '../../utils/mapArray';
 export const TextBanner = ({ title, paragraphs }) => {
 
   return (
-    <section className={BannerStyles.textSection}>
+    <section className={BannerStyles.textContainer}>
       <h2 className={BannerStyles.title}>{title}</h2>
       {mapArray(paragraphs, (paragraph, index) => (
         <p 
@@ -24,11 +24,11 @@ export const TextBanner = ({ title, paragraphs }) => {
 // functional component that takes imageUrl, alt, title, topLeftTagline, ButtonLeft and url as props
 export const ImageBanner = ({ imageUrl, alt, topLeftTagline, buttons }) => {
   return (
-    <section className={BannerStyles.imgSection}>
+    <section className={BannerStyles.imgContainer}>
       <img className={BannerStyles.imageUrl} src={imageUrl} alt={alt} />
       <div className={BannerStyles.topLeftTagline}>{topLeftTagline}</div>
       {buttons && buttons.length > 0 && (
-        <div className={BannerStyles.buttonLeft}>
+        <div className={BannerStyles.buttonContainer}>
           {mapArray(buttons, (button, index) => (
             <Button
               key={index}
