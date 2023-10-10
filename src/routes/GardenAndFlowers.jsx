@@ -5,8 +5,9 @@ import Navbar from "../components/Navbar/Navbar";
 import { BannerDisplay } from "../components/Banner/BannerDisplay";
 //import { CategoriesCard } from '../components/Categories/CategoriesCard';
 import { CategoriesDisplay } from '../components/Categories/CategoriesDisplay';
-export default function GardenAndFlowers() {
 
+
+export default function GardenAndFlowers() {
 
   return (
     <>
