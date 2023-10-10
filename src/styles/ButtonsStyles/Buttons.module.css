@@ -26,13 +26,11 @@ button {
 
   .greenButton {
     border-radius: 8px;
-    border: 0.5px solid var(--Green);
     padding: 1em 1.4em;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
     text-shadow: 10px 10px 10px var(--DarkColor);
-    background-color: var(--GreenPastelDarkTransparent);
     backdrop-filter: blur(5px);
     cursor: pointer;
     transition: border-color 0.25s;
@@ -41,9 +39,9 @@ button {
   }
 
   .greenButton:hover {
-    background-color: var(--Green);
+    background-color: var(--GreenPastelDark);
   }
-  
+
 
   @media only screen and (max-width: 768px) {
     button {

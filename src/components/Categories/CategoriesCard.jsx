@@ -1,6 +1,6 @@
 // rafc
 import PropTypes from 'prop-types'
-
+import { GreenButton } from '../Button/Button'
 import { Button } from '../Button/Button'
 import mapArray from '../../utils/mapArray'
 import CategoriesCardStyles from '../../styles/CategoriesStyles/CategoriesCard.module.css'
@@ -13,10 +13,10 @@ export const CategoriesCard = ({ imageUrl, alt, title, buttons }) => {
         {buttons && buttons.length > 0 && (
           <div className={CategoriesCardStyles.buttonContainer}>
             {mapArray(buttons, (button, index) => (
-              <Button
+              <GreenButton
                 key={index}
                 label={button.label}
-                className={CategoriesCardStyles.button}
+                className={CategoriesCardStyles.greenButton}
                 onClick={() => window.location.href = button.url} 
               />
             ))}
