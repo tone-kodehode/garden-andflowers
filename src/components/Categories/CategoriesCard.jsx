@@ -4,19 +4,19 @@ import PropTypes from 'prop-types'
 import { Button } from '../Button/Button'
 import mapArray from '../../utils/mapArray'
 
-import CategoriesStyles from '../../styles/CategoriesStyles/Categories.module.css'
-export const Categories = ({ imageUrl, alt, title, buttons }) => {
+import CategoriesCardStyles from '../../styles/CategoriesStyles/CategoriesCard.module.css'
+export const CategoriesCard = ({ imageUrl, alt, title, buttons }) => {
   return (
-    <section className={CategoriesStyles.imgContainer}>
-      <img className={CategoriesStyles.imageUrl} src={imageUrl} alt={alt} />
-      <div className={CategoriesStyles.infoContainer}>
-        <h2 className={CategoriesStyles.title}>{title}</h2>
+    <section className={CategoriesCardStyles.cardContainer}>
+      <img className={CategoriesCardStyles.imageUrl} src={imageUrl} alt={alt} />
+      <div className={CategoriesCardStyles.infoContainer}>
+        <h2 className={CategoriesCardStyles.title}>{title}</h2>
         {buttons && buttons.length > 0 && (
-          <div className={CategoriesStyles.buttonContainer}>
+          <div className={CategoriesCardStyles.buttonContainer}>
             {mapArray(buttons, (button, index) => (
               <Button
                 key={index}
-                className={CategoriesStyles.button}
+                className={CategoriesCardStyles.button}
                 onClick={() => window.location.href = button.url} 
               >
                 {button.label}
@@ -29,7 +29,7 @@ export const Categories = ({ imageUrl, alt, title, buttons }) => {
   )
 }
 
-Categories.propTypes = {
+CategoriesCard.propTypes = {
   imageUrl: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

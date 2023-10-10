@@ -3,7 +3,7 @@ import { Announcement } from '../components/Navbar/Announcement'
 import Navbar from "../components/Navbar/Navbar";
 
 import { BannerDisplay } from "../components/Banner/BannerDisplay";
-
+import { CategoriesCard } from '../components/Categories/CategoriesCard';
 export default function GardenAndFlowers() {
 
 
@@ -12,6 +12,8 @@ export default function GardenAndFlowers() {
       <Announcement />
       <Navbar />
       <BannerDisplay id={0} type="image"/>
+      <CategoriesCard />
+
     </>
   )
 }

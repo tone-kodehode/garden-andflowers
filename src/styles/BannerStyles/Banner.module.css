@@ -12,7 +12,8 @@
     top: 55px;
     left: 85px;
     font-size: 2rem;
-    text-shadow: 5px 5px 15px var(--DarkColor);
+    text-shadow: 5px 5px 10px var(--DarkColor);
+    color: var(--white);
     font-weight: 500;
     transition: font-size 0.2s ease;
     transition: left 0.2s ease;
@@ -20,11 +21,13 @@
 }
 
 .buttonContainer { 
+    color: var(--white);
     position: absolute;
     bottom: 75px;
     left: 85px;
     transition: font-size 0.2s ease;
     transition: left 0.2s ease;
+    cursor: pointer;
 }
 
 .imageUrl {
