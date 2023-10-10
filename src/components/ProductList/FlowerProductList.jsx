@@ -1,6 +1,6 @@
 
 
-export const ProductFlowerList = () => {
+export const FlowerProductList = () => {
   return (
     <div>ProductFlowerList</div>
   )

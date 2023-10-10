@@ -55,8 +55,11 @@ ImageBanner.propTypes = {
   alt: PropTypes.string.isRequired, // alt is a required string prop
   title: PropTypes.string.isRequired, // title is a required string prop
   topLeftTagline: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]), // topLeftTagline can be a string or an array of strings
-  label: PropTypes.string, // buttonLeft is optional string prop
-  onClick: PropTypes.func, // onClick is an optional function prop for the button click handler
-  Url: PropTypes.string, // url is an optional string prop
+  buttons: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+    })
+  ), // buttons array of objects with label and url properties required string
 };
 

@@ -7,7 +7,7 @@ button {
     font-weight: 500;
     font-family: inherit;
     text-shadow: 5px 5px 15px var(--DarkColor);
-    color: var(--lightColor);
+    color: var(--white);
     border-color: var(--GreenPastelDarkTransparent);
     background-color: var(--GreenPastelDarkTransparent);
     /* backdrop-filter: blur(2px); */

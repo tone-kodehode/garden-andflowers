@@ -1,6 +1,6 @@
 
 
-export const ProductFlowerPage = () => {
+export const FlowerProductPage = () => {
   return (
     <div>ProductFlowerPage</div>
   )
