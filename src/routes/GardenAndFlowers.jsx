@@ -10,6 +10,7 @@ import { CategoriesDisplay } from '../components/Categories/CategoriesDisplay';
 import { RegisterForm } from '../components/Forms/RegisterForm';
 import { SignInForm } from '../components/Forms/SignInForm';
 import { CartCard } from '../components/Cart/CartCard';
+import { JoinUsForm } from '../components/Forms/JoinUs';
 
 
 
@@ -30,6 +31,7 @@ export default function GardenAndFlowers() {
       <RegisterForm />
       <SignInForm />
       <CartCard />
+      <JoinUsForm />
 
 
     </>
