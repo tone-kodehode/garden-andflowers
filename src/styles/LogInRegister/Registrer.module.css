@@ -53,6 +53,7 @@
 }
 
 .registerButton {
+    width: 47%;
     background-color: var(--Blue);
     border: none;
     /* padding: 15px 20px; */
