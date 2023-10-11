@@ -25,6 +25,20 @@ h1 {
 
 
 
+/* input[type=text] {
+    box-sizing: border-box; 
+    border: 0.1px solid var(--GreyTint3);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  } */
+  
+/* input[type=text]:focus {
+    border: 1px solid var(--Blue);
+} */
+
+
+
 
 
 

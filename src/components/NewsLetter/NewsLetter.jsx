@@ -1,7 +1,7 @@
-
+import NewsLetterStyles from '../../styles/NewsLetterStyles/NewsLetter.module.css'
 
 export const NewsLetter = () => {
   return (
-    <div>NewsLetter</div>
+    <div className={NewsLetterStyles.container}>NewsLetter</div>
   )
 }

@@ -6,6 +6,12 @@ import { BannerDisplay } from "../components/Banner/BannerDisplay";
 //import { CategoriesCard } from '../components/Categories/CategoriesCard';
 import { CategoriesDisplay } from '../components/Categories/CategoriesDisplay';
 
+// style test
+import Cart from './Cart';
+import LogIn from './LogIn';
+import Register from './Register';
+
+
 
 export default function GardenAndFlowers() {
 
@@ -16,6 +22,11 @@ export default function GardenAndFlowers() {
       <BannerDisplay id={0} type="image"/>
       {/* <CategoriesCard /> */}
       <CategoriesDisplay />
+
+
+      <Cart />
+      <LogIn />
+      <Register />
 
     </>
   )

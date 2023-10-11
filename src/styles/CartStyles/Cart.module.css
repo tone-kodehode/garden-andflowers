@@ -1,0 +1,100 @@
+
+.container {
+    border: 5px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vh;
+    height: 100vh; */
+}
+
+.title {
+    font-size: 24px;
+    padding: 20px;
+}
+
+.cartContainer {
+    border: 1px solid red;
+    width: 40%;
+    padding: 20px;
+}
+
+/* .cartContainer {
+    border: 1px solid red;
+}
+
+.cartContainer {
+    border: 1px solid red;
+} */
+
+.topContainer {
+    border: 1px solid red;
+}
+
+.topButton {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Blue);
+}
+
+/* Continue Shopping
+.topButtonFild {
+    background-color: var(--GreyTint2);
+    color: var(--DarkColor);
+}
+*/
+
+.topTexts {
+    border: 1px solid red;
+}
+
+.topText {
+    border: 1px solid red;
+}
+
+/* .topText {
+    border: 1px solid red;
+}
+
+.topText {
+    border: 1px solid red;
+} */
+
+
+
+.infoContainer {
+    border: 1px solid red;
+}
+
+.product {
+    border: 1px solid red;
+}
+
+.productDetail {
+    border: 1px solid red;
+}
+
+.productImg {
+    border: 1px solid red;
+}
+
+.productName {
+    border: 1px solid red;
+}
+
+.productColor {
+    border: 1px solid red;
+}
+
+.productSize {
+    border: 1px solid red;
+}
+
+.priceDetail {
+    border: 1px solid red;
+}
+
+.summary {
+    border: 1px solid red;
+}

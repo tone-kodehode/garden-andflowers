@@ -1,0 +1,28 @@
+.container {
+    border: 5px solid rebeccapurple;
+}
+
+.formContainer {
+    border: 1px solid rebeccapurple;
+}
+
+.title {
+    border: 1px solid rebeccapurple;
+}
+
+.form {
+    border: 1px solid rebeccapurple;
+}
+
+.input {
+    border: 1px solid rebeccapurple;
+}
+
+.logInButton {
+    background-color: var(--Blue);
+    
+}
+
+.link {
+    border: 1px solid rebeccapurple;
+}

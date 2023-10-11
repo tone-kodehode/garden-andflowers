@@ -20,14 +20,13 @@
     /* border: 1px solid green; */
 }
 
+
 .buttonContainer { 
-    color: var(--white);
     position: absolute;
     bottom: 75px;
     left: 85px;
     transition: font-size 0.2s ease;
     transition: left 0.2s ease;
-    cursor: pointer;
 }
 
 .imageUrl {

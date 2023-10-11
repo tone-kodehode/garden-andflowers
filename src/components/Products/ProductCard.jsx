@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
 
-import ProductCardsStyles from '../../styles/CardsStyles/ProductCard.module.css'
+import ProductCardsStyles from '../../styles/ProductStyles/ProductCard.module.css'
 
 export const ProductCard = ({ id, title, shortDescription, price, currency, imageUrl, onClick }) => (
 

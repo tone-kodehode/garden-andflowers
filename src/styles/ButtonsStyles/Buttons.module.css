@@ -1,8 +1,10 @@
 
 button {
+    border: none;
     border-radius: 8px;
     border: 0.5px solid var(--Green);
-    padding: 1em 1.4em;
+    padding: 1.3em 1.5em;
+    /* 20.8 24 */
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
@@ -25,8 +27,10 @@ button {
   } */
 
   .greenButton {
+    border: none;
     border-radius: 8px;
-    padding: 1em 1.4em;
+    padding: 1.3em 1.5em;
+    /* 20.8 24 */
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
@@ -41,6 +45,33 @@ button {
   .greenButton:hover {
     background-color: var(--GreenPastelDark);
   }
+
+  .blueButton {
+    border: none;
+    background-color: var(--Blue);
+    color: var(--white);
+
+    /* padding: 20px 80px;
+    font-weight: 600; */
+
+  }
+
+  .GreyTint3 {
+    border: none;
+    background-color: var(--GreyTint2);
+    color: var(--DarkColor);
+
+    /* padding: 20px 80px;
+    font-weight: 600; */
+
+  }
+
+  .GreyTint3:hover {
+    background-color: var(--GreyTint3);
+    color: var(--DarkColor);
+}
+
+
 
 
   @media only screen and (max-width: 768px) {
