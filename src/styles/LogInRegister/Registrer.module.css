@@ -47,9 +47,11 @@
 } 
 
 .agreement {
+    text-align: center;
+    color: var(--GreyTint2);
     /* border: 1px solid blue; */
     font-size: 12px;
-    margin: 20px 0;
+    margin: 20px;
 }
 
 .registerButton {
@@ -61,7 +63,7 @@
 }
 
 .registerButton:hover {
-    background-color: var(--GreyTint3);
+    background-color: var(--BlueTint3);
     color: var(--DarkColor);
 }
 

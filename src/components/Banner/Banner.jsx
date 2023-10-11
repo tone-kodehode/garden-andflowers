@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Button } from '../Button/Button';
+import { Button } from '@mui/material';
 import BannerStyles from '../../styles/BannerStyles/Banner.module.css'
 // mapArray function with two arguments, first argument: paragraphs (array of paragraphs) to render and secend a callback (paragraph, index) as arrow function to applie to each element in the paragraphs array,paragraph parameter placed the content inside the "<p>" element, key (index) attribute is unique identifier of each element in paragraphs array 
 import mapArray from '../../utils/mapArray';

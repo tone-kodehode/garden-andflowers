@@ -56,6 +56,11 @@ button {
 
   }
 
+  .blueButton:hover {
+    background-color: var(--BlueTint3);
+    color: var(--DarkColor);
+  }
+
   .GreyTint3 {
     border: none;
     background-color: var(--GreyTint2);
