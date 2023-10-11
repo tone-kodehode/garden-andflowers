@@ -1,0 +1,80 @@
+/* .ProductSection {
+    display: flex;
+   
+
+    border: solid 20px red;
+} */
+
+
+.ProductCard {
+    display: flex;
+    margin-top: 40px; 
+    /* border: solid 10px pink; */
+}
+
+.Article {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px blue; */
+    
+} 
+
+.imageUrl {
+    width: 700px;
+    margin-left: 20px;
+    /* border: solid 1px orange; */
+}
+
+.title {
+    font-size: 35px;
+    /* border: solid 1px yellow; */
+}
+
+.id, .climateZone, .category {
+  color: grey;
+  font-size: 14px;
+}
+
+/* .flowerCycle, .sun,  {
+    
+} */
+
+.shortDescription {
+    text-align: start;
+    padding: 25px;
+    font-size: 18px;
+    /* border: solid 1px red; */
+}
+
+.description {
+    text-align: start;
+    padding: 25px;
+    font-size: 18px;
+    /* border: solid 1px red; */
+}
+
+.cardChart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* height: 10%; */
+}
+
+.price {
+    color: gray;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.currency {
+    font-size: 14px;
+}
+
+.sectionidcategory {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
