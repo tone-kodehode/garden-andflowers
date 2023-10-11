@@ -7,9 +7,9 @@ import { BannerDisplay } from "../components/Banner/BannerDisplay";
 import { CategoriesDisplay } from '../components/Categories/CategoriesDisplay';
 
 // style test
-import Cart from './Cart';
-import LogIn from './LogIn';
-import Register from './Register';
+import { RegisterForm } from '../components/Forms/RegisterForm';
+import { SignInForm } from '../components/Forms/SignInForm';
+import { CartCard } from '../components/Cart/CartCard';
 
 
 
@@ -24,9 +24,13 @@ export default function GardenAndFlowers() {
       <CategoriesDisplay />
 
 
-      <Cart />
-      <LogIn />
-      <Register />
+ 
+      {/* style test */}
+
+      <RegisterForm />
+      <SignInForm />
+      <CartCard />
+
 
     </>
   )
