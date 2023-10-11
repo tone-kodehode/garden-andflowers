@@ -5,7 +5,7 @@ export const JoinUsForm = () => {
     <div className={JoinUsStyles.container}>
       <h1 className={JoinUsStyles.title}>Join Us</h1>
       <div className={JoinUsStyles.description}>
-        Become an Garden & Flowers Plus member for perks. 
+        Become an Garden & Flowers <b>Plus member</b> for perks. 
         Priority access, exclusive sales and free Shipping.
         Inspirational news and garden ideas in your inbox.</div>
       <div className={JoinUsStyles.formContainer}>
