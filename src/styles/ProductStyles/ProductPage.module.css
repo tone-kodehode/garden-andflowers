@@ -1,49 +1,62 @@
-/* .ProductSection {
+.pageContainer {
     display: flex;
    
 
-    border: solid 20px red;
-} */
+    border: solid 20px brown;
+} 
 
 
-.ProductCard {
+.productCard {
     display: flex;
-    margin-top: 40px; 
-    /* border: solid 10px pink; */
+    /* margin-top: 40px;  */
+    border: solid 10px pink;
+    width: 100%;
 }
 
-.Article {
+.article {
+    flex: 1;
     display: flex;
+    width: 50%;
     flex-direction: column;
-    /* border: solid 1px blue; */
+    border: solid 2px blue; 
     
 } 
 
 .imageUrl {
-    width: 700px;
-    margin-left: 20px;
-    /* border: solid 1px orange; */
+    /* width: 700px;
+    margin-left: 20px; */
+    height: 50vh;
+    width: auto;
+    object-fit: cover;
+    border: solid 1px orange;
 }
 
 .title {
     font-size: 35px;
-    /* border: solid 1px yellow; */
+    border: solid 1px red; 
+}
+
+.categoryContainer {
+    border: solid 1px red; 
+
 }
 
 .id, .climateZone, .category {
   color: grey;
   font-size: 14px;
+  border: 1px solid lightblue;
 }
 
-/* .flowerCycle, .sun,  {
+.cycle {
+    border: 1px solid orange;
     
-} */
+} 
 
 .shortDescription {
     text-align: start;
     padding: 25px;
     font-size: 18px;
-    /* border: solid 1px red; */
+    border: solid 1px orchid; 
 }
 
 .description {
@@ -53,7 +66,7 @@
     /* border: solid 1px red; */
 }
 
-.cardChart {
+.cartContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;

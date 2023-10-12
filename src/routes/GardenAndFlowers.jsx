@@ -12,6 +12,7 @@ import { SignInForm } from '../components/Forms/SignInForm';
 import { CartCard } from '../components/Cart/CartCard';
 import { JoinUsForm } from '../components/Forms/JoinUs';
 
+
 export default function GardenAndFlowers() {
 
   return (
@@ -30,6 +31,7 @@ export default function GardenAndFlowers() {
       <SignInForm />
       <CartCard />
       <JoinUsForm />
+   
     
 
 

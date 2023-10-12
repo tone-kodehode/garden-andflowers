@@ -14,7 +14,7 @@ export const flowerList = {
             climateZone: "Climate Zone: 1-3",
             height: {heightIcon: "/src/assets/Icon/height48.svg", cm: "Height 50 cm"},
             diameter: {diameterIcon: "/src/assets/Icon/diameter48.svg", diameter: "Diameter cm"},
-            flowerCycle: "July - September",
+            cycle: "July - September",
             lightRequirement: {sun: ""},
             pollinators: "",
         }, {
