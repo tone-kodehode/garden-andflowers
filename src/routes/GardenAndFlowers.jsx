@@ -14,6 +14,7 @@ import { JoinUsForm } from '../components/Forms/JoinUs';
 import { FlowerCardProductList } from '../components/ProductList/CardProductList';
 
 
+
 export default function GardenAndFlowers() {
 
   return (
@@ -33,6 +34,8 @@ export default function GardenAndFlowers() {
       <CartCard />
       <JoinUsForm />
       <FlowerCardProductList />
+    
+     
    
    
     

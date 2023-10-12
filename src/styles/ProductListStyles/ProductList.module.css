@@ -1,11 +1,14 @@
 .productCard {
     display: flex;
-    flex-wrap: wrap;
+    overflow: auto;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    /* gap: 25px 0px; */
-    gap: 50px 0;
+    /* position: relative; */
+
     
-    /* border: 2px solid red;  */
+    /* border: 10px solid saddlebrown; */
+}
+
+.productCard::-webkit-scrollbar {
+    display: none;
 }
