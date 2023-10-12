@@ -1,28 +1,83 @@
-.cardContainer {
-    border-color: 1px solid rebeccapurple;
+/* .cardContainer { */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative; */
+    /* margin-bottom: 30px ; */
+    /* border: 10px solid green;  */
+/* }   */
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    /* position: relative; */
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 0.4px var(--DarkColorShadow);
+    background-color: var(--white);
+    gap: 10px;
+    padding: 20px;
+    
 }
-.ProductCard {
-    border-color: 1px solid rebeccapurple;
-}
+
+/* .imgSection{
+    
+    background-color: orange;
+} */
+
 .imageUrl {
-    border-color: 1px solid rebeccapurple;
+    border-radius: 8px;
+    /* border-color: 1px solid rebeccapurple; */
+    max-width: 250px;
+    text-align: center;
+    width: fit-content; 
+}
+
+.infoSection {
+    width: 250px;
+    /* background-color: red; */
 }
 .title {
-    border-color: 1px solid rebeccapurple;
+    /* background-color: green; */
+    margin-bottom: 10px;
 }
 .shortDescription {
-    border-color: 1px solid rebeccapurple;
+    /* background-color: rebeccapurple; */
+    margin-bottom: 10px;
 }
 .cartContainer {
-    border-color: 1px solid rebeccapurple;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    /* background-color: pink; */
+}
+
+.priceSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
 .price {
-    border-color: 1px solid rebeccapurple;
+    /* border-color: 1px solid rebeccapurple; */
+    color: gray;
+    font-size: 25px;
+    font-weight: 500;
 }
 .currency {
-    border-color: 1px solid rebeccapurple;
+    /* background-color: rebeccapurple; */
+    font-size: 12px;
+    
 }
 .cart {
-    border-color: 1px solid rebeccapurple;
+    /* background-color: rebeccapurple; */
+    font-size: 50px; 
 }
