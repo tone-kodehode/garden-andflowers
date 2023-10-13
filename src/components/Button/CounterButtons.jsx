@@ -2,7 +2,7 @@ import { useCounter } from "../../hooks/useCounter"
 
 import CounterStyles from '../../styles/ButtonsStyles/Counter.module.css'
 
-export const Counter = () => {
+export const CounterButtons = () => {
   const [state, dispatch] = useCounter()
   
   let { count } = state
