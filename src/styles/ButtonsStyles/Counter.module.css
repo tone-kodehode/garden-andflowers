@@ -1,0 +1,15 @@
+.contaner {
+    border: 1px solid blue;
+}
+
+.counter {
+    border: 1px solid red;
+}
+
+.counterButtton {
+    background-color: var(--Blue);
+}
+
+.count {
+    border: 1px solid pink;
+}

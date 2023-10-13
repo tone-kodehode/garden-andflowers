@@ -33,6 +33,7 @@ export default function GardenAndFlowers() {
       <CartCard />
       <JoinUsForm />
       <MaxFlowerCardProductList />
+  
     
     
      
