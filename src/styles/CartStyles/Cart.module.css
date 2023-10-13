@@ -1,16 +1,18 @@
-/* 
-.container {
+
+/* .container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh; 
-} */
+}  */
 
-/* .cartContainer {
-    border: 1px solid red;
-    padding: 50px;
-} */
+ .cartContainer {
+    /* border: 1px solid red; */
+    width: 100vw;
+    height: 100vh;
+    /* padding: 50px; */
+} 
 
 .title {
     /* text-align: center; */

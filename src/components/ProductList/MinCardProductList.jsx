@@ -1,19 +1,21 @@
+
 import { useShuffleItems } from '../../hooks/useShuffleItems'
 import { flowerList } from '../../data/FlowerList'
-import { FlowerProductCard } from '../ProductCard/ProductCard'
-import ColumnProductListStyles from '../../styles/ProductListStyles/ColumnProductList.module.css'
+import { MinFlowerProductCard } from '../ProductCard/MinProductCard'
+import RowProductListStyles from '../../styles/ProductListStyles/RowProductList.module.css'
 
-export const FlowerCardProductList = () => {
+
+
+export const MinFlowerCardProductList = () => {
     const shuffledFlowerList = useShuffleItems(flowerList.listArray)
 
   return (
-    <section className={ColumnProductListStyles.productCard}>
-        {shuffledFlowerList.map(({id, imageUrl, title, shortDescription, price, currency}) => (
+    <section className={RowProductListStyles.productCard}>
+        {shuffledFlowerList.map(({id, imageUrl, title, price, currency}) => (
             <div key={id} >
-                <FlowerProductCard 
+                <MinFlowerProductCard 
                     imageUrl={imageUrl}
                     title={title}
-                    shortDescription={shortDescription}
                     price={price}
                     currency={currency}
                 />
@@ -23,17 +25,16 @@ export const FlowerCardProductList = () => {
   )
 }
 
-// export const PlantersCardProductList = () => {
+// export const MinPlantersCardProductList = () => {
 //     const shuffledFlowerList = useShuffleItems(plantersList.listArray)
 
 //   return (
-//     <section className={ColumnProductListStyles.productCard}>
-//         {shuffledFlowerList.map(({id, imageUrl, title, shortDescription, price, currency}) => (
+//     <section className={RowProductListStyles.productCard}>
+//         {shuffledFlowerList.map(({id, imageUrl, title, price, currency}) => (
 //             <div key={id} >
 //                 <ProductCard 
 //                     imageUrl={imageUrl}
 //                     title={title}
-//                     shortDescription={shortDescription}
 //                     price={price}
 //                     currency={currency}
 //                 />
@@ -43,17 +44,16 @@ export const FlowerCardProductList = () => {
 //   )
 // }
 
-// export const UtilitiesCardProductList = () => {
+// export const MinUtilitiesCardProductList = () => {
 //     const shuffledFlowerList = useShuffleItems(utilitiesList.listArray)
 
 //   return (
-//     <section className={ColumnProductListStyles.productCard}>
-//         {shuffledFlowerList.map(({id, imageUrl, title, shortDescription, price, currency}) => (
+//     <section className={RowProductListStyles.productCard}>
+//         {shuffledFlowerList.map(({id, imageUrl, title, price, currency}) => (
 //             <div key={id} >
 //                 <ProductCard 
 //                     imageUrl={imageUrl}
 //                     title={title}
-//                     shortDescription={shortDescription}
 //                     price={price}
 //                     currency={currency}
 //                 />

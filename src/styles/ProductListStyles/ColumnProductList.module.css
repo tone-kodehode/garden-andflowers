@@ -1,0 +1,14 @@
+.productCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+
+    
+    /* border: 10px solid saddlebrown; */
+}
+
+.productCard::-webkit-scrollbar {
+    display: none;
+}

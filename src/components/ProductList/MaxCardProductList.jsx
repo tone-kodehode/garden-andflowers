@@ -1,16 +1,19 @@
+
 import { useShuffleItems } from '../../hooks/useShuffleItems'
 import { flowerList } from '../../data/FlowerList'
-import { FlowerProductCard } from '../ProductCard/ProductCard'
-import ColumnProductListStyles from '../../styles/ProductListStyles/ColumnProductList.module.css'
+import { MaxFlowerProductCard } from '../ProductCard/MaxProductCard'
+import RowProductListStyles from '../../styles/ProductListStyles/RowProductList.module.css'
 
-export const FlowerCardProductList = () => {
+
+
+export const MaxFlowerCardProductList = () => {
     const shuffledFlowerList = useShuffleItems(flowerList.listArray)
 
   return (
-    <section className={ColumnProductListStyles.productCard}>
-        {shuffledFlowerList.map(({id, imageUrl, title, shortDescription, price, currency}) => (
+    <section className={RowProductListStyles.productCard}>
+        {shuffledFlowerList.map(({id, imageUrl, title, price, currency, shortDescription}) => (
             <div key={id} >
-                <FlowerProductCard 
+                <MaxFlowerProductCard 
                     imageUrl={imageUrl}
                     title={title}
                     shortDescription={shortDescription}
@@ -23,12 +26,12 @@ export const FlowerCardProductList = () => {
   )
 }
 
-// export const PlantersCardProductList = () => {
+// export const MaxPlantersCardProductList = () => {
 //     const shuffledFlowerList = useShuffleItems(plantersList.listArray)
 
 //   return (
-//     <section className={ColumnProductListStyles.productCard}>
-//         {shuffledFlowerList.map(({id, imageUrl, title, shortDescription, price, currency}) => (
+//     <section className={RowProductListStyles.productCard}>
+//         {shuffledFlowerList.map(({id, imageUrl, title, price, currency, shortDescription}) => (
 //             <div key={id} >
 //                 <ProductCard 
 //                     imageUrl={imageUrl}
@@ -43,12 +46,12 @@ export const FlowerCardProductList = () => {
 //   )
 // }
 
-// export const UtilitiesCardProductList = () => {
-//     const shuffledFlowerList = useShuffleItems(utilitiesList.listArray)
+// export const MaxUtilitesCardProductList = () => {
+//     const shuffledFlowerList = useShuffleItems(utilites.listArray)
 
 //   return (
-//     <section className={ColumnProductListStyles.productCard}>
-//         {shuffledFlowerList.map(({id, imageUrl, title, shortDescription, price, currency}) => (
+//     <section className={RowProductListStyles.productCard}>
+//         {shuffledFlowerList.map(({id, imageUrl, title, price, currency, shortDescription}) => (
 //             <div key={id} >
 //                 <ProductCard 
 //                     imageUrl={imageUrl}
@@ -62,4 +65,3 @@ export const FlowerCardProductList = () => {
 //     </section>
 //   )
 // }
-

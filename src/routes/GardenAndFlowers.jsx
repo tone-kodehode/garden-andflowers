@@ -11,8 +11,7 @@ import { RegisterForm } from '../components/Forms/RegisterForm';
 import { SignInForm } from '../components/Forms/SignInForm';
 import { CartCard } from '../components/Cart/CartCard';
 import { JoinUsForm } from '../components/Forms/JoinUs';
-import { FlowerCardProductList } from '../components/ProductList/CardProductList';
-
+import { MaxFlowerCardProductList } from '../components/ProductList/MaxCardProductList';
 
 
 export default function GardenAndFlowers() {
@@ -33,7 +32,8 @@ export default function GardenAndFlowers() {
       <SignInForm />
       <CartCard />
       <JoinUsForm />
-      <FlowerCardProductList />
+      <MaxFlowerCardProductList />
+    
     
      
    
