@@ -28,7 +28,7 @@ export const bannerList = {
             id: 0,
             type: 'image',
             className: "imgSection",
-            imageUrl: '/ImgBanner/tulip1904-804.jpg', 
+            imageUrl: './public/ImgBanner/tulip1904-804.jpg', 
             alt: 'Home page, Garden & Flowers',
             title: 'Garden & Flowers',
             topLeftTagline: 'A Greener Everyday Life',
