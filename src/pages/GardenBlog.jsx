@@ -1,7 +1,7 @@
 
 
 
-export const Garden = () => {
+export const GardenBlog = () => {
   return (
     <div className="main">
       Garden

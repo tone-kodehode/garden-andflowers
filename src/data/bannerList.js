@@ -19,6 +19,9 @@
  * @property {string} url - URL link 
  */
 
+import TulipBannerImg from '../assets/ImgBanner/tulip1904-804.jpg'
+import PeonyBannerImg from '../assets/ImgBanner/peony1904-804.jpg'
+
 
 
 
@@ -28,7 +31,7 @@ export const bannerList = {
             id: 0,
             type: 'image',
             className: "imgSection",
-            imageUrl: './public/ImgBanner/tulip1904-804.jpg', 
+            imageUrl: TulipBannerImg, 
             alt: 'Home page, Garden & Flowers',
             title: 'Garden & Flowers',
             topLeftTagline: 'A Greener Everyday Life',
@@ -56,7 +59,7 @@ export const bannerList = {
             id: 2,
             type: 'image',
             className: 'imgSection',
-            imageUrl: '/garden-andflowers/src/assets/ImgBanner/peony1904-804.jpg', 
+            imageUrl: PeonyBannerImg, 
             alt: 'Page not found',
             title: 'Page not fond',
             topLeftTagline: 
@@ -67,7 +70,7 @@ export const bannerList = {
             buttons: [
                 {
                   label: 'See Our Selection',
-                  url: '/flowers',
+                  url: '/',
                   position: 'topLeft',
                   className: "buttonContainer",
                 },

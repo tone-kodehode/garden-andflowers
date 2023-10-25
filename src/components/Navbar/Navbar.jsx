@@ -79,10 +79,13 @@ const Navbar = () => {
             <Link to="/flowers">Flowers</Link>
           </div>
           <div className={NavbarStyles.menu}>
-            <Link to="/garden">Garden</Link>
+            <Link to="/gardenblog">Garden Blog</Link>
           </div>
           <div className={NavbarStyles.menu}>
-            <Link to="/blog">Blog</Link>
+            <Link to="/planters">Planters</Link>
+          </div>
+          <div className={NavbarStyles.menu}>
+            <Link to="/utilities">Utilities</Link>
           </div>
           <div className={NavbarStyles.menu}>
             <Link to="/about">About</Link>

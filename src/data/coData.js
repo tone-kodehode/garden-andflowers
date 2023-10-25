@@ -9,11 +9,11 @@
  * @param {string} url - compony URL
  */
 
-
+import Logo70 from '../assets/logo70.svg'
 export const coData = {
     id: 0,
     className: 'Logo',
-    imageUrl: '/src/assets/logo70.svg', 
+    imageUrl: Logo70, 
     alt: 'Garden & Flowers Logo',
     title: 'Garden & Flowers',
     shortDescription: 'A greener everyday life',

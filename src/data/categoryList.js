@@ -1,16 +1,22 @@
+
+import OutdoorPlantersImg from '../assets/ImgCategory/640hagepotter.png'
+import GardenUtilities from '../assets/ImgCategory/Potes.png'
+import GardenBlog from '../assets/ImgCategory/rosebed.png'
+
+
 export const categoryList = {
     "listArray": [
         {
             id: 0,
             type: 'image',
             title: "Outdoor Planters",
-            imageUrl: "/garden-andflowers/src/assets/ImgCategory/640hagepotter.png",
+            imageUrl: OutdoorPlantersImg,
             alt: "Flower Pots",
             category: "Outdoor Planters",
             buttons: [
                 {
                   label: 'Order Planters',
-                  url: '/',
+                  url: '/planters',
                   className: "buttonContainer",
                 },
             ],
@@ -19,13 +25,13 @@ export const categoryList = {
             id: 1,
             type: 'image',
             title: "Flowers",
-            imageUrl: "/garden-andflowers/src/assets/ImgCategory/Potes.png",
+            imageUrl: GardenUtilities,
             alt: "Flowers",
             category: "flowers",
             buttons: [
                 {
                   label: 'Order Flowers',
-                  url: '/',
+                  url: '/flowers',
                   className: "buttonContainer",
                 },
             ],
@@ -39,7 +45,7 @@ export const categoryList = {
             buttons: [
                 {
                   label: 'Order Utilities',
-                  url: '/',
+                  url: '/utilities',
                   className: "buttonContainer",
                 },
             ],
@@ -47,13 +53,13 @@ export const categoryList = {
             id: 3,
             type: 'image',
             title: "Garden Blog",
-            imageUrl: "/garden-andflowers/src/assets/ImgCategory/rosebed.png",
+            imageUrl: GardenBlog,
             alt: "Garden blog",
             category: "gardenBlog",
             buttons: [
                 {
                   label: 'Greener Everyday',
-                  url: '/',
+                  url: '/gardenblog',
                   className: "buttonContainer",
                 },
             ],
