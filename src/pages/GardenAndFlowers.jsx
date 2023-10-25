@@ -10,8 +10,12 @@ export const GardenAndFlowers = () => {
   return (
     <>
       <BannerDisplay id={0} type="image"/>
-      {/* <CategoriesCard /> */}
       <CategoriesDisplay />
+      <div className="main">
+        
+      </div>
+      {/* <CategoriesCard /> */}
+      
     </>
   )
 }

@@ -18,6 +18,10 @@ body::-webkit-scrollbar {
   display: none; 
 }
 
+.main {
+  margin: 0 80px;
+}
+
 h1 {
   font-size: 3em;
   line-height: 1.1;

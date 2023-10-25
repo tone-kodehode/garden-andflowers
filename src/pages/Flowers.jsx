@@ -3,7 +3,7 @@ import { FlowerCardProductList } from "../components/ProductList/CardProductList
 
 export const Flowers = () => {
   return (
-    <div>
+    <div className="main">
         <BannerDisplay id={1} type="text"/>
         <FlowerCardProductList />
 

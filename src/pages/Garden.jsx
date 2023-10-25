@@ -3,7 +3,7 @@
 
 export const Garden = () => {
   return (
-    <div>
+    <div className="main">
       Garden
     </div>
   )
