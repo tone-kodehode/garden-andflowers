@@ -1,3 +1,5 @@
+
+
 import { CategoriesCard } from "./CategoriesCard"
 import mapArray from "../../utils/mapArray"
 import { categoryList } from "../../data/categoryList"
@@ -6,6 +8,7 @@ import CategoriesDisplayStyles from '../../styles/CategoriesStyles/CategoriesDis
 
 export const CategoriesDisplay = () => {
   const {listArray} = categoryList
+
 
   return (
     <div className={CategoriesDisplayStyles.displayContaner}>

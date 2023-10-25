@@ -1,9 +1,13 @@
 // rafc
 import PropTypes from 'prop-types'
+import { useNavigate } from 'react-router-dom'
 import { GreenButton } from '../Button/Button'
 import mapArray from '../../utils/mapArray'
 import CategoriesCardStyles from '../../styles/CategoriesStyles/CategoriesCard.module.css'
+
 export const CategoriesCard = ({ imageUrl, alt, title, buttons }) => {
+  const navigate = useNavigate()
+
   return (
     <section className={CategoriesCardStyles.cardContainer}>
       <img className={CategoriesCardStyles.imageUrl} src={imageUrl} alt={alt} />
@@ -16,7 +20,7 @@ export const CategoriesCard = ({ imageUrl, alt, title, buttons }) => {
                 key={index}
                 label={button.label}
                 className={CategoriesCardStyles.greenButton}
-                onClick={() => window.location.href = button.url} 
+                onClick={() => navigate(button.url)} 
               />
             ))}
           </div>

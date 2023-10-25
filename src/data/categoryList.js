@@ -1,7 +1,8 @@
 
 import OutdoorPlantersImg from '../assets/ImgCategory/640hagepotter.png'
-import GardenUtilities from '../assets/ImgCategory/Potes.png'
+import Flowers from '../assets/ImgCategory/Potes.png'
 import GardenBlog from '../assets/ImgCategory/rosebed.png'
+import GardenUtilities from '../assets/ImgCategory/hageutstyr.png'
 
 
 export const categoryList = {
@@ -25,7 +26,7 @@ export const categoryList = {
             id: 1,
             type: 'image',
             title: "Flowers",
-            imageUrl: GardenUtilities,
+            imageUrl: Flowers,
             alt: "Flowers",
             category: "flowers",
             buttons: [
@@ -39,7 +40,7 @@ export const categoryList = {
             id: 2,
             type: 'image',
             title: "Garden Utilities",
-            imageUrl: "/garden-andflowers/src/assets/ImgCategory/hageutstyr.png",
+            imageUrl: GardenUtilities,
             alt: "Garden Utilities",
             category: "Garden Utilities",
             buttons: [
