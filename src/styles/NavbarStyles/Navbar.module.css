@@ -1,5 +1,6 @@
 .container {
     border: 1px solid transparent;
+    
     /* padding: 0 50px; */
 }
 
@@ -21,7 +22,7 @@
 .searchContainer {
     display: flex;
     align-items: center;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     /* padding: 5px; */
     /* border: 1px solid red; */
 }

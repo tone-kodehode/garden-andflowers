@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 
 
 import ShowHideButtonStyles from '../../styles/ButtonsStyles/ShowHideButton.module.css'
@@ -21,9 +21,6 @@ export const ShowHideButton = ({content}) => {
   )
 }
 
-ShowHideButton.propTypes = {
-
-  content: PropTypes.string,
-// to: PropTypes.string.isRequired,
-// onClick: PropTypes.string.isRequired
-}
+// ShowHideButton.propTypes = {
+//   content: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
+// }

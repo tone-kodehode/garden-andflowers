@@ -5,9 +5,9 @@ import ProductCardsStyles from '../../styles/ProductCardStyles/ProductCards.modu
 
 
 
-export const FlowerProductCard = ({id, onClick, imageUrl, alt, title, shortDescription, price, currency}) => {
+export const FlowerProductCard = ({id, imageUrl, alt, title, shortDescription, price, currency}) => {
   return (
-    <section className={ProductCardsStyles.cardContainer} onClick={() => onClick(id)}>
+    <section className={ProductCardsStyles.cardContainer} >
       <div className={ProductCardsStyles.productCard} id={id}>
         <section className={ProductCardsStyles.imgSection}>
           <img className={ProductCardsStyles.imageUrl} src={imageUrl} alt={alt} />

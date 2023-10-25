@@ -1,4 +1,3 @@
 # Garden & Flowers
-MERN
+MERN project 
 
-Visit site https://tone-kodehode.github.io/garden-andflowers/

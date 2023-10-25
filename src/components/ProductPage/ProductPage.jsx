@@ -1,13 +1,13 @@
-//import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
 import LocalFloristRoundedIcon from '@mui/icons-material/LocalFloristRounded';
 import { ShowHideButton } from '../Button/ShowHideButton';
-import ProductPageStyles from '../../styles/ProductStyles/ProductPage.module.css'
+import ProductPageStyles from '../../styles/ProductPageStyles/ProductPage.module.css'
 
-export const FlowerProductPage = ({id, onClick, imageUrl, alt, title, climateZone, category, shortDescription, price, currency, cycle, description}) => {
+export const ProductPage = ({id, imageUrl, alt, title, climateZone, category, shortDescription, price, currency, cycle, description}) => {
   return (
-    <section className={ProductPageStyles.pageContainer} onClick={() => onClick(id)}>
+    <section className={ProductPageStyles.pageContainer} >
       <div className={ProductPageStyles.productCard} id={id}>
         <article className={ProductPageStyles.article}>
           <img className={ProductPageStyles.imageUrl} src={imageUrl} alt={alt} />
@@ -36,22 +36,23 @@ export const FlowerProductPage = ({id, onClick, imageUrl, alt, title, climateZon
 }
 
 
-// FlowerProductPage.propTypes = {
-//   imageUrl: PropTypes.string.isRequired, 
-//   alt: PropTypes.string.isRequired, 
-//   title: PropTypes.string.isRequired, 
-//   id: PropTypes.number.isRequired,
-//   climateZone: PropTypes.string, 
-//   category: PropTypes.string, 
-//   shortDescription: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]), // topLeftTagline can be a string or an array of strings
-//   description: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]), // topLeftTagline can be a string or an array of strings
-//   price: PropTypes.number.isRequired,
-//   currency: PropTypes.string.isRequired,
-//   buttons: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       label: PropTypes.string.isRequired,
-//       url: PropTypes.string.isRequired,
-//     })
-//   ), // buttons array of objects with label and url properties required string
-// }
+ProductPage.propTypes = {
+  imageUrl: PropTypes.string.isRequired, 
+  alt: PropTypes.string.isRequired, 
+  title: PropTypes.string.isRequired, 
+  id: PropTypes.number.isRequired,
+  climateZone: PropTypes.string,
+  cycle: PropTypes.string, 
+  category: PropTypes.string, 
+  shortDescription: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]), // topLeftTagline can be a string or an array of strings
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]), // topLeftTagline can be a string or an array of strings
+  price: PropTypes.number.isRequired,
+  currency: PropTypes.string.isRequired,
+  buttons: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+    })
+  ), // buttons array of objects with label and url properties required string
+}
 

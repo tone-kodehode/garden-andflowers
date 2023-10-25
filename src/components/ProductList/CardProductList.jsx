@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useShuffleItems } from '../../hooks/useShuffleItems'
 import { flowerList } from '../../data/FlowerList'
 import { FlowerProductCard } from '../ProductCard/ProductCard'
@@ -6,18 +7,21 @@ import ColumnProductListStyles from '../../styles/ProductListStyles/ColumnProduc
 export const FlowerCardProductList = () => {
     const shuffledFlowerList = useShuffleItems(flowerList.listArray)
 
+
+
   return (
     <section className={ColumnProductListStyles.productCard}>
         {shuffledFlowerList.map(({id, imageUrl, title, shortDescription, price, currency}) => (
-            <div key={id} >
+            <Link key={id} to={`/flowers/${id}`} >
                 <FlowerProductCard 
+                    id={id}
                     imageUrl={imageUrl}
                     title={title}
                     shortDescription={shortDescription}
                     price={price}
                     currency={currency}
                 />
-            </div>    
+            </Link>   
         ))}
     </section>
   )
