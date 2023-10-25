@@ -85,15 +85,8 @@ const Navbar = () => {
             <Link to="/blog">Blog</Link>
           </div>
           <div className={NavbarStyles.menu}>
-            
-          </div>
-          <div className={NavbarStyles.menu}>
-            <Link to="/flowers">Flowers</Link>
-          </div>
-          <div className={NavbarStyles.menu}>
-            <Link to="/flowers">Flowers</Link>
-          </div>
-             
+            <Link to="/about">About</Link>
+          </div>          
         </div>
       </div>
     </div>

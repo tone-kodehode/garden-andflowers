@@ -9,7 +9,9 @@ export const Layout = ({children}) => {
     <div className="layoutContainer">
       <Navbar />
 
-      <div>{children}</div>
+      <div>
+        {children}    
+      </div>
 
       <Footer />
     </div>

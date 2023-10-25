@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
 
-import ProductCardsStyles from '../../styles/ProductStyles/ProductCards.module.css'
+import ProductCardsStyles from '../../styles/ProductCardStyles/ProductCards.module.css'
 
 
 

@@ -3,7 +3,9 @@
 
 export const Garden = () => {
   return (
-    <div>Garden</div>
+    <div>
+      Garden
+    </div>
   )
 }
 

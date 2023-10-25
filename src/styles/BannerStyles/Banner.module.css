@@ -40,7 +40,7 @@
 .textContainer {
     display: flex;
     flex-direction: column;
-    padding: 50px 80px;
+    padding: 50px 0px;
     /* border: 1px solid green; */
 }
 
