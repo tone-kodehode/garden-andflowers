@@ -1,4 +1,5 @@
-import GardenAndFlowers from './routes/GardenAndFlowers'
+
+import { ReactRoutes } from "./routes/ReactRoutes"
 
 
 import "/src/styles/index.css"
@@ -10,7 +11,7 @@ function App() {
 
   return (
     <>
-      <GardenAndFlowers /> 
+      <ReactRoutes />   
     </>
   )
 }

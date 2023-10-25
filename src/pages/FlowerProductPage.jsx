@@ -1,7 +1,9 @@
 
 
-export default function FlowerProductPage() {
+
+export const FlowerProductPage = () => {
   return (
     <div>FlowerProductPage</div>
   )
 }
+
