@@ -37,7 +37,7 @@ export const bannerList = {
             topLeftTagline: 'A Greener Everyday Life',
             buttons: [
                 {
-                  label: 'See Our Selection',
+                  label: 'See Our Flowers',
                   url: '/flowers',
                   position: 'topLeft',
                   className: "buttonContainer",

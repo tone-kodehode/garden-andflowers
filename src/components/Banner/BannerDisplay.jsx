@@ -25,6 +25,7 @@ export const BannerDisplay = ({id, type}) => {
            title={selectedBanner.title}
            topLeftTagline={selectedBanner.topLeftTagline}
            buttons={selectedBanner.buttons}
+          
          />
        )}
        {type === 'text' && (

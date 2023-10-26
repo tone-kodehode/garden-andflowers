@@ -9,6 +9,7 @@ export const JoinUsForm = () => {
         Priority access, exclusive sales and purchase bonuse.
         Inspirational news and garden ideas in your inbox.</div>
       <div className={JoinUsStyles.formContainer}>
+        <input className={JoinUsStyles.input} type="text" placeholder='Name' />
         <input className={JoinUsStyles.input} type="text" placeholder='E-mail' />
         <input className={JoinUsStyles.input} type="text" placeholder='Phone Number' />
         <button className={JoinUsStyles.submitButton}>

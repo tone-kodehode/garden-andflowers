@@ -2,11 +2,12 @@
 a {
   font-weight: 500;
   text-decoration: inherit;
+  color: var(--textColor);
 }
 
-/* a:hover {
+a:hover {
   color: var(--Green);
-} */
+} 
 
 body {
   margin: 0;
@@ -31,10 +32,10 @@ body {
   margin: 0 80px;
 }
 
-h1 {
+/* h1 {
   font-size: 3em;
   line-height: 1.1;
-} 
+}  */
 
 
 

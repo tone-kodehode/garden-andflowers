@@ -37,7 +37,8 @@ CategoriesCard.propTypes = {
   buttons: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
+      className: PropTypes.string,
       url: PropTypes.string.isRequired,
     })
   ).isRequired,
-};
+}
