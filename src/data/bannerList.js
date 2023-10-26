@@ -64,13 +64,13 @@ export const bannerList = {
             title: 'Page not fond',
             topLeftTagline: 
             [
-                'Oops!', 
+                'Oops! ', 
                 '404 Page not found',
             ],
             buttons: [
                 {
                   label: 'See Our Selection',
-                  url: '/',
+                  url: '/flowers',
                   position: 'topLeft',
                   className: "buttonContainer",
                 },

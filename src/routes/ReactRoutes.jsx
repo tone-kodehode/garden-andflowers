@@ -19,10 +19,9 @@ export const ReactRoutes = () => {
   return (
     <>
         <Announcement />
-   
           <Routes>
-            <Route path='/' element={<Layout />} >
-              <Route path='/' element={<GardenAndFlowers />} />
+            <Route  path='/' element={<Layout />} > 
+              <Route index element={<GardenAndFlowers />} />
               <Route path="/flowers" element={<Flowers />} />
               <Route path='/flowers/:id' element={<FlowerProductPage />} />
               <Route path="/gardenblog" element={<GardenBlog />} />
@@ -35,10 +34,8 @@ export const ReactRoutes = () => {
               <Route path="/about" element={<About />} />
               <Route path="about" element={<About />} />
               <Route path="*" element={<NoPage />} />
-            </Route>
+            </Route> 
           </Routes>
-      
-    
       </>
   )
 }

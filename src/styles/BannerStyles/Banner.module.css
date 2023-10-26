@@ -9,7 +9,7 @@
 
 .topLeftTagline {
     position: absolute;
-    top: 55px;
+    top: 85px;
     left: 85px;
     font-size: 2rem;
     text-shadow: 5px 5px 10px var(--DarkColor);
@@ -23,7 +23,7 @@
 
 .buttonContainer { 
     position: absolute;
-    bottom: 75px;
+    bottom: 95px;
     left: 85px;
     transition: font-size 0.2s ease;
     transition: left 0.2s ease;

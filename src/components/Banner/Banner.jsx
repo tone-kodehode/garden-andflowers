@@ -43,8 +43,8 @@ export const ImageBanner = ({ imageUrl, alt, topLeftTagline, buttons }) => {
         </div>
       )}
     </section>
-  );
-};
+  )
+}
 
 // Define PropTypes for TextBanner component
 TextBanner.propTypes = {
@@ -56,7 +56,7 @@ TextBanner.propTypes = {
 ImageBanner.propTypes = {
   imageUrl: PropTypes.string.isRequired, // imageUrl is a required string prop
   alt: PropTypes.string.isRequired, // alt is a required string prop
-  title: PropTypes.string.isRequired, // title is a required string prop
+  title: PropTypes.string, // title is a string prop
   topLeftTagline: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]), // topLeftTagline can be a string or an array of strings
   buttons: PropTypes.arrayOf(
     PropTypes.shape({
@@ -64,5 +64,5 @@ ImageBanner.propTypes = {
       url: PropTypes.string.isRequired,
     })
   ), // buttons array of objects with label and url properties required string
-};
+}
 

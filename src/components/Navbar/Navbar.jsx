@@ -1,12 +1,11 @@
 // rafce arrow
-import { Link } from 'react-router-dom';
+
 import { NavLink } from 'react-router-dom';
 import { Title } from './Title';
-
 import { Logo } from './Logo';
 //import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import SearchIcon from '@mui/icons-material/Search';
-import Badge from '@mui/material/Badge';
+//import Badge from '@mui/material/Badge';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 
@@ -48,9 +47,9 @@ const Navbar = () => {
         <div className={NavbarStyles.right}>
         <div className={NavbarStyles.menu}>
           <NavLink to="/cart">
-            <Badge badgeContent={4} color="success">
+            {/* <Badge badgeContent={4} color="success"> */}
               <ShoppingCartOutlinedIcon className={NavbarStyles.cart}  color="action"/>
-            </Badge>
+            {/* </Badge> */}
           </NavLink>
           </div>  
           {/* <div className={NavbarStyles.menu}>
@@ -67,50 +66,49 @@ const Navbar = () => {
         <span className={NavbarStyles.language}>EN</span>
 
         <div className={NavbarStyles.searchContainer}>
-            <SearchIcon className={NavbarStyles.search} color="action"/>
-            <input type="text" className={NavbarStyles.input}/>           
+            <SearchIcon className={NavbarStyles.search} color="action"/>         
           </div>   
         </div>
         
         <div className={NavbarStyles.right}>
-          <div className={NavbarStyles.menu}>
+          <div className={NavbarStyles.menuLink}>
             <NavLink to="/" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '400' : '300',})}
+            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '500' : '300',})}
             >
               Garden & Flowers
             </NavLink>
           </div>
-          <div className={NavbarStyles.menu}>
+          <div className={NavbarStyles.menuLink}>
             <NavLink to="/flowers" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '400' : '300',})}
+            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '500' : '300',})}
             >
               Flowers
             </NavLink>
           </div>
-          <div className={NavbarStyles.menu}>
+          <div className={NavbarStyles.menuLink}>
             <NavLink to="/gardenblog" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '400' : '300',})}
+            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '500' : '300',})}
             >
               Garden Blog
             </NavLink>
           </div>
-          <div className={NavbarStyles.menu}>
+          <div className={NavbarStyles.menuLink}>
             <NavLink to="/planters" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '400' : '300',})}
+            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '500' : '300',})}
             >
               Planters
             </NavLink>
           </div>
-          <div className={NavbarStyles.menu}>
+          <div className={NavbarStyles.menuLink}>
             <NavLink to="/utilities" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '400' : '300',})}
+            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '500' : '300',})}
             >
               Utilities
             </NavLink>
           </div>
-          <div className={NavbarStyles.menu}>
+          <div className={NavbarStyles.menuLink}>
             <NavLink to="/about" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '400' : '300',})}
+            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '500' : '300',})}
             >
               About
             </NavLink>

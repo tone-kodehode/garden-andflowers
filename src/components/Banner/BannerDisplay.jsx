@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useSelectedItem } from "../../hooks/useSelectedItem";
 import { ImageBanner } from "./Banner";
 import { TextBanner } from "./Banner";
+
 import { bannerList } from "../../data/bannerList";
 
 
