@@ -6,7 +6,7 @@ import PaletteRoundedIcon from '@mui/icons-material/PaletteRounded';
 
 
 export const CartCard = () => {
-    // 
+
 
     return (
         <div className={CartStyles.container}>   

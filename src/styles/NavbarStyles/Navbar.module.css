@@ -92,6 +92,10 @@
     white-space: nowrap;  
 }
 
+.menuLink:hover {
+  color: var(--Green); 
+}
+
 
 
 

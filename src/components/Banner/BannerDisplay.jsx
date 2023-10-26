@@ -9,10 +9,10 @@ import { bannerList } from "../../data/bannerList";
 
 export const BannerDisplay = ({id, type}) => {
    // call the useSelecteItem hook to get the selected banner
-   const selectedBanner = useSelectedItem(id, bannerList.listArray);
+   const selectedBanner = useSelectedItem(id, bannerList.listArray)
 
    if (!selectedBanner) {
-     return null; // return null if banner is not found
+     return null // return null if banner is not found
    }
 
 
@@ -37,11 +37,11 @@ export const BannerDisplay = ({id, type}) => {
        )}
      </div>
    );
-};
+}
 
 BannerDisplay.propTypes = {
     id: PropTypes.number.isRequired, // prop specifying the selected banner ID
     type: PropTypes.oneOf(['text', 'image']).isRequired, // prop specifying the banner type
-};
+}
 
 

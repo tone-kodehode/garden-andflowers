@@ -11,6 +11,7 @@ import { FlowerProductPage } from '../pages/FlowerProductPage'
 import { Planters } from '../pages/Planters'
 import { Utilities } from '../pages/Utilities'
 import { GardenBlog } from '../pages/GardenBlog'
+import { Cart } from '../pages/Cart'
 import { About } from '../pages/About'
 import { NoPage } from '../pages/NoPage'
 
@@ -29,8 +30,8 @@ export const ReactRoutes = () => {
 
               <Route path="/utilities" element={<Utilities />} />
             
-            {/* <Route path="cart" element={<Cart />}/> */}
-              <Route path="about" element={<About />} />
+              <Route path="/cart" element={<Cart />}/> 
+              {/* <Route path="about" element={<About />} /> */}
               <Route path="/about" element={<About />} />
               <Route path="about" element={<About />} />
               <Route path="*" element={<NoPage />} />

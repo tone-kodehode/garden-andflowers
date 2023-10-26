@@ -6,7 +6,8 @@ import { Logo } from './Logo';
 //import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import SearchIcon from '@mui/icons-material/Search';
 //import Badge from '@mui/material/Badge';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import { CartButton } from '../Button/CartButton';
+import { SearchButton } from '../Button/SearchButton';
 
 
 import NavbarStyles from '/src/styles/NavbarStyles/Navbar.module.css'
@@ -46,11 +47,7 @@ const Navbar = () => {
         </div>
         <div className={NavbarStyles.right}>
         <div className={NavbarStyles.menu}>
-          <NavLink to="/cart">
-            {/* <Badge badgeContent={4} color="success"> */}
-              <ShoppingCartOutlinedIcon className={NavbarStyles.cart}  color="action"/>
-            {/* </Badge> */}
-          </NavLink>
+              <CartButton />
           </div>  
           {/* <div className={NavbarStyles.menu}>
             <MenuRoundedIcon style={{ fontSize: 50 }}/>
@@ -66,7 +63,8 @@ const Navbar = () => {
         <span className={NavbarStyles.language}>EN</span>
 
         <div className={NavbarStyles.searchContainer}>
-            <SearchIcon className={NavbarStyles.search} color="action"/>         
+            {/* <SearchIcon className={NavbarStyles.search} color="action"/> */}
+            <SearchButton />
           </div>   
         </div>
         
