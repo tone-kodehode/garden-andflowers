@@ -51,8 +51,8 @@ export const bannerList = {
             title: 'Flowers',
             paragraphs: 
             [
-                "Plant your own oasis with a combination of flowers, shrubs and trees. Give the visual impact to the garden, terraces or balconie. Plants build scenic landscapes and bring the view to life.",
-                "Connecting with nature, bees and butterflys in your very own oasis. Build up a field of vision with your own preferens of colors. A mix of flower heights and textures can soften a hard landscap and repeating flowers can create cohesion.",
+                "Plant your oasis with a combination of flowers, shrubs and trees. Plants build landscapes and bring the view to life. Fountain grass is a real show-stopper and Hostas make beautiful architectural plants. Evergreen shrub always have something to offer the display, giving visual impact to the garden, terraces or balconie.",
+                "Draw pollinators like, bees and butterflys to your garden. It will ensure plants produce seeds and fruits, result is bigger and better crops for you. Coneflowers provide both pollen and nectar, meeting pollinators requirements. Plants that bloom at staggered times throughout the year and blossom for long periods, can draw pollinators. Flower shapes and colors also matter to pollinators. A mix of flower heights and textures can soften a hard landscap and repeating flowers can create cohesion.",
             ],
         }, 
         {
@@ -70,10 +70,21 @@ export const bannerList = {
             buttons: [
                 {
                   label: 'See Our Selection',
-                  url: '/flowers',
+                  url: '/',
                   position: 'topLeft',
                   className: "buttonContainer",
                 },
+            ],
+        },
+        {
+            id: 3,
+            type: 'text',
+            className: 'textSection',
+            title: 'Planters',
+            paragraphs: 
+            [
+                "Outdoor planters, are a great way to make custom built designs on your patio and garden area. Group pots of various shapes, sizes, and complementary styles. Flowers, trees, vegetables and herbs, adapt amazingly to growing in planters. Plants in pots need some care and maintenance to ensure your plants have the right soil to thrive, container gardening is much easier to master!",
+                "Short on space and a bit of sunlight, you can still embrace the world of gardening. In a driveway or a balcony, outdoor planters in a variety, create a stunning display. Pick a palette that works with the house colors and stick to it in all your containers. Regardless of your preference, planters is a fantastic way to experiment with planting and design. Mix different textures, shapes, and colors to heighten visual interest. Want to show off a cool container? Pair it with plainer plants.",
             ],
         },
     ]

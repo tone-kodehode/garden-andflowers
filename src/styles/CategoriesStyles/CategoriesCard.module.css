@@ -51,8 +51,6 @@
     color: var(--white);
 
     transition: font-size 0.2s ease;
-    transition: left 0.2s ease;
-  
 }
 
 .buttonContainer {

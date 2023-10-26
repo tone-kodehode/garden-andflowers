@@ -173,7 +173,7 @@ export const flowerList = {
             color: "",
             price: 99,
             currency: "NOK",
-            shortDescription: "Pamplona, tulip with peony-shaped flowers. Layers of petals make up this magnificent flower. The double late tulip flower can be as much as 25 cm wide.",
+            shortDescription: "Pamplona, tulip with peony-shaped flowers. Layers of petals make up this magnificent flower. The double late tulip can be as much as 25 cm wide.",
             description: "Flower bulbs certainly give the most reward for the effort you put in. Tulip bulbs are planted in autumn before the frost settles. The earlier before the frost, the better time to form roots. Tulips do not need fertilizer, but a small dose of high phosphorus fertilizer can help the bulbs establish and produce more flowers. When the tulip starts to sprout in the spring, make sure the soil stays moist. However, avoid overwatering as this can lead to rot. Pamplona is an eye-catching tulip well worth waiting for until spring.",
             imageUrl: TulipPamplona,
             alt: "Tulip by Serhii Kalyn on Unsplash",
