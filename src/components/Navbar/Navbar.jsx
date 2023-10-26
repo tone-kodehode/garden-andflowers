@@ -7,7 +7,6 @@ import { Logo } from './Logo';
 import SearchIcon from '@mui/icons-material/Search';
 //import Badge from '@mui/material/Badge';
 import { CartButton } from '../Button/CartButton';
-import { SearchButton } from '../Button/SearchButton';
 
 
 import NavbarStyles from '/src/styles/NavbarStyles/Navbar.module.css'
@@ -15,7 +14,7 @@ import NavbarStyles from '/src/styles/NavbarStyles/Navbar.module.css'
 const Navbar = () => {
   
   return (
-    <>
+    < div className='main'>
     <div className={NavbarStyles.container}>
       <div className={NavbarStyles.navContainer}>
         <div className={NavbarStyles.left}> 
@@ -63,50 +62,50 @@ const Navbar = () => {
         <span className={NavbarStyles.language}>EN</span>
 
         <div className={NavbarStyles.searchContainer}>
-            {/* <SearchIcon className={NavbarStyles.search} color="action"/> */}
-            <SearchButton />
+            <SearchIcon className={NavbarStyles.search} color="action"/>
+           
           </div>   
         </div>
         
         <div className={NavbarStyles.right}>
           <div className={NavbarStyles.menuLink}>
             <NavLink to="/" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '500' : '300',})}
+            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '600' : '300',})}
             >
               Garden & Flowers
             </NavLink>
           </div>
           <div className={NavbarStyles.menuLink}>
             <NavLink to="/flowers" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '500' : '300',})}
+            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '600' : '300',})}
             >
               Flowers
             </NavLink>
           </div>
           <div className={NavbarStyles.menuLink}>
-            <NavLink to="/gardenblog" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '500' : '300',})}
-            >
-              Garden Blog
-            </NavLink>
-          </div>
-          <div className={NavbarStyles.menuLink}>
             <NavLink to="/planters" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '500' : '300',})}
+            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '600' : '300',})}
             >
               Planters
             </NavLink>
           </div>
           <div className={NavbarStyles.menuLink}>
             <NavLink to="/utilities" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '500' : '300',})}
+            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '600' : '300',})}
             >
               Utilities
             </NavLink>
           </div>
           <div className={NavbarStyles.menuLink}>
+            <NavLink to="/gardenblog" 
+            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '600' : '300',})}
+            >
+              Garden Blog
+            </NavLink>
+          </div>
+          <div className={NavbarStyles.menuLink}>
             <NavLink to="/about" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '500' : '300',})}
+            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '600' : '300',})}
             >
               About
             </NavLink>
@@ -116,7 +115,7 @@ const Navbar = () => {
     </div>
 
     
-    </>
+    </div>
     
   )
 }
