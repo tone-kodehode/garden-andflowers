@@ -66,7 +66,7 @@ input {
 }
 
 
-button {
+.ModalButton {
     width: 160px;
     height: 45px;
     border-radius: 8px;
@@ -76,7 +76,7 @@ button {
     color: var(--white);  
 }
 
-button:hover {
+.ModalButton:hover {
     background-color: var();
     border-radius: 0px;
 }
