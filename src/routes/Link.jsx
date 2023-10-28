@@ -7,10 +7,9 @@ export const CreateAccountLink = () => {
 
   const linkStyle = {
     fontSize: '12px',
-    margin: '20px 0',
     color: 'var(--Blue)',
     cursor: 'pointer',
-    textDecoration: isHovered ? 'none' : 'underline',
+    textDecoration: isHovered ? 'underline' : 'none',
     fontWeight: isHovered ? '600' : 'normal',
   }
  
@@ -33,10 +32,9 @@ export const ForgotPasswordLink = () => {
 
   const linkStyle = {
     fontSize: '12px',
-    margin: '20px 0',
     color: 'var(--Blue)',
     cursor: 'pointer',
-    textDecoration: isHovered ? 'none' : 'underline',
+    textDecoration: isHovered ? 'underline' : 'none',
     fontWeight: isHovered ? '600' : 'normal',
   }
  

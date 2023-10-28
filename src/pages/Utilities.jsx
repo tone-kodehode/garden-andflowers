@@ -2,6 +2,6 @@
 
 export const Utilities = () => {
   return (
-    <div>Utilities</div>
+    <div className="main">Utilities</div>
   )
 }

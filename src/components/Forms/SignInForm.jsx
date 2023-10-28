@@ -14,6 +14,8 @@ export const SignInForm = () => {
                 <button className={SignInStyles.logInButton}>Sign In</button>
                 <div className={SignInStyles.link}>
                   <ForgotPasswordLink />
+                </div>
+                <div className={SignInStyles.link}>
                   <CreateAccountLink />
                 </div>
                 

@@ -4,7 +4,7 @@ import { CartCard } from "../components/Cart/CartCard"
 
 export const Cart = () => {
   return (
-    <div>
+    <div className="main">
         <CartCard />
     </div>
   )

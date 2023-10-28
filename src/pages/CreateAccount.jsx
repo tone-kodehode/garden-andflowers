@@ -5,7 +5,7 @@ import { CreateAccountForm } from "../components/Forms/CreateAccountForm"
 
 export const CreateAccount = () => {
   return (
-    <div>
+    <div className="main">
       <CreateAccountForm />
     </div>
   )

@@ -2,6 +2,6 @@
 
 export const ForgotPassword = () => {
   return (
-    <div>Forgot Password?</div>
+    <div className="main">Forgot Password?</div>
   )
 }
