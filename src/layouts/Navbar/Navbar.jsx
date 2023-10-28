@@ -4,14 +4,19 @@
 import { Logo } from './Logo';
 import { SearchButton } from '../../components/Button/SearchButton';
 import { CartButton } from '../../components/Button/CartButton';
-import { LogInButton } from '../../components/Button/LogInButton';
+import { SignInButton } from '../../components/Button/SignInButton';
 
-import { GardenAndFlowersNavLink } from '../../routes/NavLink';
-import { FlowersNavLink } from '../../routes/NavLink';
-import { PlantersNavLink } from '../../routes/NavLink';
-import { UtilitiesNavLink } from '../../routes/NavLink';
-import { GardenBlogNavLink } from '../../routes/NavLink';
-import { AboutNavLink } from '../../routes/NavLink';
+import { 
+  GardenAndFlowersNavLink,
+  FlowersNavLink,
+  PlantersNavLink,
+  UtilitiesNavLink,
+  GardenBlogNavLink,
+  AboutNavLink,
+} from '../../routes/NavLink';
+
+
+
 
 
 import NavbarStyles from '/src/styles/NavbarStyles/Navbar.module.css'
@@ -75,8 +80,8 @@ const Navbar = () => {
               <CartButton />
         </div>
         <div className={NavbarStyles.menuLink}>
-              <LogInButton />
-        </div>           
+              <SignInButton />
+        </div>          
         </div>
       </div>
     </div>

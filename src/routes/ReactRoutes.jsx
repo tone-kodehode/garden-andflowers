@@ -13,8 +13,11 @@ import { FlowerProductPage } from '../pages/FlowerProductPage'
 import { Planters } from '../pages/Planters'
 import { Utilities } from '../pages/Utilities'
 import { GardenBlog } from '../pages/GardenBlog'
-import { Cart } from '../pages/Cart'
 import { About } from '../pages/About'
+import { Cart } from '../pages/Cart'
+import { SignIn } from '../pages/SignIn'
+import { CreateAccount } from '../components/Forms/CreateAccountForm'
+import { ForgotPassword } from '../pages/ForgotPassword'
 import { NoPage } from '../pages/NoPage'
 
 
@@ -39,7 +42,10 @@ export const ReactRoutes = () => {
               <Route path='/gardenblog/:id' element={<FlowerProductPage />} />
             
               <Route path="/cart" element={<Cart />}/> 
+              <Route path='/signin' element={<SignIn />} />
               <Route path="/about" element={<About />} />
+              <Route path='/createaccount' element={<CreateAccount />} />
+              <Route path='/forgotpassword' element={<ForgotPassword />} />
               <Route path="*" element={<NoPage />} />
             </Route> 
           </Routes>

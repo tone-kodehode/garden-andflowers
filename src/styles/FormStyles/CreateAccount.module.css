@@ -3,8 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    padding: 80px 0px;
 }
 
 .formContainer {
@@ -66,6 +65,8 @@
     background-color: var(--BlueTint3);
     color: var(--DarkColor);
 }
+
+
 
 
 @media only screen and (max-width: 768px) {
