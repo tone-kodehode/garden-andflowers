@@ -3,7 +3,9 @@ import {
     Route, 
 } from 'react-router-dom'
 
-import { Announcement } from '../components/Navbar/Announcement'
+
+
+import { Announcement } from '../layouts/Navbar/Announcement'
 import { Layout } from '../layouts/Layout/Layout'
 import { GardenAndFlowers } from '../pages/GardenAndFlowers'
 import { Flowers } from '../pages/Flowers'
@@ -20,20 +22,24 @@ export const ReactRoutes = () => {
   return (
     <>
         <Announcement />
-          <Routes>
-            <Route  path='/' element={<Layout />} > 
-              <Route index element={<GardenAndFlowers />} />
+          <Routes >
+            <Route element={<Layout />} > 
+              <Route path="/" element={<GardenAndFlowers />} />
+
               <Route path="/flowers" element={<Flowers />} />
               <Route path='/flowers/:id' element={<FlowerProductPage />} />
-              <Route path="/gardenblog" element={<GardenBlog />} />
+
               <Route path="/planters" element={<Planters />} />
+              <Route path='/planters/:id' element={<FlowerProductPage />} />
 
               <Route path="/utilities" element={<Utilities />} />
+              <Route path='/utilities/:id' element={<FlowerProductPage />} />
+
+              <Route path="/gardenblog" element={<GardenBlog />} />
+              <Route path='/gardenblog/:id' element={<FlowerProductPage />} />
             
               <Route path="/cart" element={<Cart />}/> 
-              {/* <Route path="about" element={<About />} /> */}
               <Route path="/about" element={<About />} />
-              <Route path="about" element={<About />} />
               <Route path="*" element={<NoPage />} />
             </Route> 
           </Routes>

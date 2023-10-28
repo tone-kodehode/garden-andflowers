@@ -1,4 +1,4 @@
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import { createPortal } from "react-dom";
 import { useModal } from '../../hooks/useModal';
@@ -28,7 +28,7 @@ export const ModalBox = ({ label, content }) => {
     );
 }
 
-// ModalBox.propTypes = {
-//     label: PropTypes.string,
-//     content: PropTypes.string,
-// }
+ModalBox.propTypes = {
+    label: PropTypes.node,
+    content: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
+}

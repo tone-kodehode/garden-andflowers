@@ -15,7 +15,7 @@ export const ModalBoxComponent = ({onClose, label, content}) => {
 
 ModalBoxComponent.propTypes = {
     label: PropTypes.string,
-    content: PropTypes.string,
+    content: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
     onClose: PropTypes.func,
     className: PropTypes.string,
 }

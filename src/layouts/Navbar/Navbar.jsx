@@ -1,12 +1,18 @@
 // rafce arrow
 
-import { NavLink } from 'react-router-dom';
 import { Title } from './Title';
 import { Logo } from './Logo';
 //import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import SearchIcon from '@mui/icons-material/Search';
 //import Badge from '@mui/material/Badge';
-import { CartButton } from '../Button/CartButton';
+import { CartButton } from '../../components/Button/CartButton';
+
+import { GardenAndFlowersNavLink } from '../../routes/NavLink';
+import { FlowersNavLink } from '../../routes/NavLink';
+import { PlantersNavLink } from '../../routes/NavLink';
+import { UtilitiesNavLink } from '../../routes/NavLink';
+import { GardenBlogNavLink } from '../../routes/NavLink';
+import { AboutNavLink } from '../../routes/NavLink';
 
 
 import NavbarStyles from '/src/styles/NavbarStyles/Navbar.module.css'
@@ -69,46 +75,22 @@ const Navbar = () => {
         
         <div className={NavbarStyles.right}>
           <div className={NavbarStyles.menuLink}>
-            <NavLink to="/" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '600' : '300',})}
-            >
-              Garden & Flowers
-            </NavLink>
+            <GardenAndFlowersNavLink />
           </div>
           <div className={NavbarStyles.menuLink}>
-            <NavLink to="/flowers" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '600' : '300',})}
-            >
-              Flowers
-            </NavLink>
+            <FlowersNavLink />
           </div>
           <div className={NavbarStyles.menuLink}>
-            <NavLink to="/planters" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '600' : '300',})}
-            >
-              Planters
-            </NavLink>
+            <PlantersNavLink />
           </div>
           <div className={NavbarStyles.menuLink}>
-            <NavLink to="/utilities" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '600' : '300',})}
-            >
-              Utilities
-            </NavLink>
+            <UtilitiesNavLink />
           </div>
           <div className={NavbarStyles.menuLink}>
-            <NavLink to="/gardenblog" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '600' : '300',})}
-            >
-              Garden Blog
-            </NavLink>
+            <GardenBlogNavLink />
           </div>
           <div className={NavbarStyles.menuLink}>
-            <NavLink to="/about" 
-            style={({ isActive }) => ({color: isActive ? '#345959' : '#01090a', fontWeight: isActive ? '600' : '300',})}
-            >
-              About
-            </NavLink>
+            <AboutNavLink />
           </div>          
         </div>
       </div>

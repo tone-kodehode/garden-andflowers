@@ -65,14 +65,14 @@ export const GoForwardButton = () => {
 
 
 Button.propTypes = {
-    label: PropTypes.string.isRequired,
+    label: PropTypes.node.isRequired,
     to: PropTypes.string,
     onClick: PropTypes.func,
     // className: PropTypes.string,
 }
 
 GreenButton.propTypes = {
-  label: PropTypes.string.isRequired,
+  label: PropTypes.node.isRequired,
   to: PropTypes.string,
   onClick: PropTypes.func,
   // onClick: PropTypes.string.isRequired
@@ -80,7 +80,7 @@ GreenButton.propTypes = {
 }
 
 BlueButton.propTypes = {
-  label: PropTypes.string.isRequired,
+  label: PropTypes.node.isRequired,
   to: PropTypes.string,
   onClick: PropTypes.func,
   // onClick: PropTypes.string.isRequired
@@ -88,7 +88,7 @@ BlueButton.propTypes = {
 }
 
 GreyTint3Button.propTypes = {
-  label: PropTypes.string.isRequired,
+  label: PropTypes.node.isRequired,
   to: PropTypes.string,
   onClick: PropTypes.func,
   // onClick: PropTypes.string.isRequired

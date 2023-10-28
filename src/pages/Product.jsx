@@ -1,6 +1,8 @@
-
+import { FlowerProduct } from "../components/ProductPage/FlowerProduct"
 export const Product = () => {
   return (
-    <div>Product</div>
+    <div>
+      <FlowerProduct />
+    </div>
   )
 }
