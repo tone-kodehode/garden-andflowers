@@ -7,11 +7,12 @@ import { useNavigateBack } from "../../hooks/useNavigateBack"
 export const FlowerProduct = () => {
     const {id} = useParams()
     const flower = flowerList.listArray.find((flower) => flower.id === Number(id))
-    const navigateBack = useNavigateBack()
+    const navigateBack = useNavigateBack(!flower)
 
     if (!flower) {
       console.log("Flower not found");
-      return navigateBack
+      
+      return navigateBack 
     }
 
     const handleProductClick = (productId) => {
