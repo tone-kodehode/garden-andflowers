@@ -56,6 +56,7 @@
     max-width: 300px;
     text-align: center;
     width: fit-content; 
+    padding-bottom: 20px;
 }
 
 .infoSection {
@@ -65,7 +66,7 @@
 }
 .title {
     /* background-color: green; */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .shortDescription {
     /* background-color: rebeccapurple; */
@@ -95,9 +96,7 @@
 .currency {
     /* background-color: rebeccapurple; */
     font-size: 12px;
-    color: var(--Grey);
-    
-    
+    color: var(--Grey); 
 }
 .cart {
     /* background-color: rebeccapurple; */

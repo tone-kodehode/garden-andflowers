@@ -18,6 +18,12 @@
     /* border: 1px solid red; */
 }
 
+.center {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
 .searchContainer {
     display: flex;
     align-items: center;
@@ -80,11 +86,12 @@
     cursor: pointer;
     margin-left: 25px;
     white-space: nowrap;
+    padding: 10px 0;
     /* border: 1px solid red;  */
 }
 
 .menuLink {
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 300;
     margin-bottom: 10px;
     cursor: pointer;

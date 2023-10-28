@@ -11,7 +11,6 @@ export const FlowerProduct = () => {
 
     if (!flower) {
       console.log("Flower not found");
-      
       return navigateBack 
     }
 

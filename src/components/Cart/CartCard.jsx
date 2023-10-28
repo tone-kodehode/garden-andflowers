@@ -9,6 +9,7 @@ export const CartCard = () => {
 
 
     return (
+     
         <div className={CartStyles.container}>   
             <div className={CartStyles.cartContainer}>
                 <h1 className={CartStyles.title}>Cart</h1>
@@ -74,6 +75,5 @@ export const CartCard = () => {
                 </div>
             </div>  
         </div>
-  
     )
 }

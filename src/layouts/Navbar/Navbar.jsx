@@ -1,11 +1,10 @@
 // rafce arrow
 
-import { Title } from './Title';
+
 import { Logo } from './Logo';
-//import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
-import SearchIcon from '@mui/icons-material/Search';
-//import Badge from '@mui/material/Badge';
+import { SearchButton } from '../../components/Button/SearchButton';
 import { CartButton } from '../../components/Button/CartButton';
+import { LogInButton } from '../../components/Button/LogInButton';
 
 import { GardenAndFlowersNavLink } from '../../routes/NavLink';
 import { FlowersNavLink } from '../../routes/NavLink';
@@ -24,56 +23,27 @@ const Navbar = () => {
     <div className={NavbarStyles.container}>
       <div className={NavbarStyles.navContainer}>
         <div className={NavbarStyles.left}> 
-          {/* <span className={NavbarStyles.language}>EN</span>  */}
+          
           
         </div>
         
-        <div className={NavbarStyles.right}>
-          <div className={NavbarStyles.menu}>REGISTER</div>
-          <div className={NavbarStyles.menu}>SIGN IN</div>
-             
-        </div>
+        
       </div>
     </div>
 
-      <div className={NavbarStyles.container}>
-      <div className={NavbarStyles.navContainer}>
-        <div className={NavbarStyles.left}> 
-          <div className={NavbarStyles.logoContainer}>
-            <Logo />
-          </div>
-          {/* <div className={NavbarStyles.searchContainer}>
-            <SearchIcon className={NavbarStyles.search} color="action"/>
-            <input type="text" className={NavbarStyles.input}/>           
-          </div> */}
-        </div>
-        <div className={NavbarStyles.center}>
-          <Title className={NavbarStyles.title}/>
-        </div>
-        <div className={NavbarStyles.right}>
-        <div className={NavbarStyles.menu}>
-              <CartButton />
-          </div>  
-          {/* <div className={NavbarStyles.menu}>
-            <MenuRoundedIcon style={{ fontSize: 50 }}/>
-          </div>        */}
-        </div>
-      </div>
-    </div>
 
     <div className={NavbarStyles.container}>
       <div className={NavbarStyles.navContainer}>
         <div className={NavbarStyles.left}> 
-
-        <span className={NavbarStyles.language}>EN</span>
-
-        <div className={NavbarStyles.searchContainer}>
-            <SearchIcon className={NavbarStyles.search} color="action"/>
-           
-          </div>   
+        <div className={NavbarStyles.menuLink}>
+            <Logo />
+          </div>
         </div>
-        
-        <div className={NavbarStyles.right}>
+        <div className={NavbarStyles.center}>
+          {/* <div className={NavbarStyles.menu}>REGISTER</div>
+          <div className={NavbarStyles.menu}>SIGN IN</div> */}
+          {/* <span className={NavbarStyles.language}>EN</span>  */}
+
           <div className={NavbarStyles.menuLink}>
             <GardenAndFlowersNavLink />
           </div>
@@ -91,7 +61,22 @@ const Navbar = () => {
           </div>
           <div className={NavbarStyles.menuLink}>
             <AboutNavLink />
-          </div>          
+          </div>
+             
+        </div>
+        
+        <div className={NavbarStyles.right}>
+        
+          
+          <div className={NavbarStyles.menuLink}>
+            <SearchButton />
+        </div>
+          <div className={NavbarStyles.menuLink}>
+              <CartButton />
+        </div>
+        <div className={NavbarStyles.menuLink}>
+              <LogInButton />
+        </div>           
         </div>
       </div>
     </div>

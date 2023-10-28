@@ -24,7 +24,7 @@ export const ReactRoutes = () => {
         <Announcement />
           <Routes >
             <Route element={<Layout />} > 
-              <Route path="/" element={<GardenAndFlowers />} />
+              <Route index element={<GardenAndFlowers />} />
 
               <Route path="/flowers" element={<Flowers />} />
               <Route path='/flowers/:id' element={<FlowerProductPage />} />
