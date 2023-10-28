@@ -7,7 +7,7 @@ export const useNavigateBack = () => {
 
     useEffect(() => {
         setTimeout(() => {
-        navigate(-1)
+        navigate(-1, {state: 'Oops! 404 Page not found'})
     }, 1000)
     }, [])
 
