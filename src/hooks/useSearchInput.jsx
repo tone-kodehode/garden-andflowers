@@ -8,6 +8,7 @@ export const useSearchInput = (paramName) => {
     setSearchParams({ [paramName]: newQuery })
   }
 
-  return { query, updateQuery }
+  return {query, updateQuery}
 }
+
 

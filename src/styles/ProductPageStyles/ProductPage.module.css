@@ -1,91 +1,121 @@
 .pageContainer {
     display: flex;
-    border: solid 20px brown;
+    /* border: solid 2px brown; */
+    padding-top: 80px; 
+    padding-bottom: 100px; 
 } 
 
 
 .productCard {
     display: flex;
     /* margin-top: 40px;  */
-    border: solid 10px pink;
-    width: 100%;
+    /* border: solid 1px pink; */
+    /* width: 100%;  */
 }
 
 .article {
-    flex: 1;
+    /* flex: 1; */
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    /* border: solid 2px blue; */ 
+} 
+
+.infoarticle {
+    padding: 0 30px;
+    /* flex: 1; */
     display: flex;
     width: 50%;
     flex-direction: column;
-    border: solid 2px blue; 
-    
-} 
+    /* border: solid 2px blue;  */  
+}
+
 
 .imageUrl {
     /* width: 700px;
     margin-left: 20px; */
-    height: 50vh;
+    height: 60vh;
     width: auto;
     object-fit: cover;
-    border: solid 1px orange;
+    /* border: solid 1px orange; */
 }
+
+
 
 .title {
     font-size: 35px;
-    border: solid 1px red; 
+    font-weight: 400;
+    /* border: solid 1px red;  */
+    padding-bottom: 20px;
 }
 
 .categoryContainer {
-    border: solid 1px red; 
-
+    /* border: solid 1px red;  */
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 
-.id, .climateZone, .category {
+.id, .climateZone, .category, .cycle {
   color: grey;
   font-size: 14px;
-  border: 1px solid lightblue;
+  /* border: 1px solid lightblue; */
 }
 
 .cycle {
-    border: 1px solid orange;
-    
+    /* border: 1px solid orange;  */
+    display: flex;
+ 
 } 
 
 .shortDescription {
     text-align: start;
-    padding: 25px;
-    font-size: 18px;
-    border: solid 1px orchid; 
+    font-size: 16px;
+    font-weight: 200;
+    /* border: solid 1px orchid;  */
+    padding: 20px 0;
 }
 
-.description {
+.ShowHide {
+    margin: 20px 0;
+}
+
+.ShowHide, .description {
     text-align: start;
-    padding: 25px;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 200;
     /* border: solid 1px red; */
 }
+
 
 .cartContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 20px 0px;
+
     /* height: 10%; */
+}
+
+.priceContainer {
+    display: flex;
+    align-items: center;
 }
 
 .price {
     color: gray;
-    font-size: 35px;
+    font-size: 34px;
     font-weight: 500;
 }
 
 .currency {
-    font-size: 14px;
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
 }
 
 .sectionidcategory {
     display: flex;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
+    
 }

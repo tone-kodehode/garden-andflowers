@@ -1,8 +1,8 @@
-import { useParams } from "react-router-dom"
+import { useParams } from 'react-router-dom'
 
-import { ProductPage } from "./ProductPage"
-import { flowerList } from "../../data/FlowerList"
-import { useNavigateBack } from "../../hooks/useNavigateBack"
+import { ProductPage } from './ProductPage'
+import { flowerList } from '../../data/flowerList'
+import { useNavigateBack } from '../../hooks/useNavigateBack'
 
 export const FlowerProduct = () => {
     const {id} = useParams()
@@ -10,7 +10,7 @@ export const FlowerProduct = () => {
     const navigateBack = useNavigateBack(!flower)
 
     if (!flower) {
-      console.log("Flower not found");
+      console.log('Flower not found');
       return navigateBack 
     }
 
@@ -18,7 +18,7 @@ export const FlowerProduct = () => {
       console.log(`Clicked on product with ID: ${productId}`)
     }
   return (
-    <div className="pageContainer">
+    <div className='pageContainer'>
       <ProductPage {...flower} onClick={{handleProductClick}}/>
     </div>
   )

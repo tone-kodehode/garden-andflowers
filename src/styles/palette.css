@@ -2,6 +2,7 @@
 
 :root {
     --LightColor: #FCFCFC;
+    --GrayWhite: #fcfdfd;
     --white: #ffffff;
     --DarkColor: #01090a;
     --DarkColorShadow: #01090a1c;
@@ -14,11 +15,16 @@
     --GreenPastelDark: #88bf90;
     --GreenPastelDarkTransparent: #88bf908e;
 
+    --GrayGreenLight: #e9ecec;
+    --GrayGreenSemiLight: #d3d9d9;
+
+
     --Blue: #7787a6;
     --BlueTint1: #9CA8C0;
     --BlueTint2: #C2CADA;
     --BlueTint3: #E7EAEF;
 
+    --GrayWhite: #fcfdfd;
     --GreyTint0: #666b6c;
     --Grey: #808484;
     --GreyTint2: #999c9d;

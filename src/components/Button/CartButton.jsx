@@ -1,18 +1,18 @@
-import { useNavigate } from 'react-router-dom';
+import { useUrlButton } from '../../hooks/useUrlButton';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 
 export const CartButton = () => {
-    const navigate = useNavigate()
-    const handleClick = () => navigate('/cart')
+  const navigateToCart = useUrlButton()
 
   return (
  
     <ShoppingCartOutlinedIcon 
-      onClick={handleClick} 
+      onClick={() => navigateToCart('/cart')} 
       sx={{ fontSize: 30 }}
       color="action"
     />
 
   )
 }
+

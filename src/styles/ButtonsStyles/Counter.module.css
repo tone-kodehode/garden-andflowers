@@ -1,15 +1,32 @@
-.contaner {
-    border: 1px solid blue;
-}
+/* .contaner {
+     border: 1px solid blue; 
+} */
 
-.counter {
-    border: 1px solid red;
+.counter, .counterButtton {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 18px;
+    
 }
 
 .counterButtton {
-    background-color: var(--Blue);
+    /* background-color: var(--GrayWhite);
+    color: var(--Dark); */
+    /* font-size: 20px; */
+    padding: 6px 0px;
+    /* font-weight: 300; */
+}
+
+.counterButtton:hover {
+    cursor: grab;
 }
 
 .count {
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
+    font-size: 20px;
+    padding: 5px 30px;
+    background-color: var(--GrayGreenLight);
+    font-weight: 300;
 }

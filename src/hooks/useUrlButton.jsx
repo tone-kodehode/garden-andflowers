@@ -9,7 +9,6 @@ export const useUrlButton = () => {
             navigate(url)
         }
     }
-  return (
-    handleButtonClick
-  )
+    
+  return handleButtonClick
 }

@@ -4,9 +4,10 @@ import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRound
 import MinProductCardsStyles from '../../styles/ProductCardStyles/MinProductCards.module.css'
 
 
-export const MinFlowerProductCard = ({id, onClick, imageUrl, alt, title, shortDescription, price, currency}) => {
+export const MinFlowerProductCard = ({id, imageUrl, alt, title, shortDescription, price, currency}) => {
+
   return (
-    <section className={MinProductCardsStyles.cardContainer} onClick={() => onClick(id)}>
+    <section className={MinProductCardsStyles.cardContainer} >
       <div className={MinProductCardsStyles.productCard} id={id}>
         <section className={MinProductCardsStyles.imgSection}>
           <img className={MinProductCardsStyles.imageUrl} src={imageUrl} alt={alt} />
@@ -84,7 +85,7 @@ MinFlowerProductCard.propTypes = {
    imageUrl: PropTypes.string.isRequired, // imageUrl is a string and required
    alt: PropTypes.string,
    onClick: PropTypes.func, // onClick is a function and required
-};
+}
 
 // // Define prop types for the ProductCard component
 MinPlantersProductCard.propTypes = {
@@ -96,7 +97,7 @@ MinPlantersProductCard.propTypes = {
   imageUrl: PropTypes.string.isRequired, // imageUrl is a string and required
   alt: PropTypes.string,
   onClick: PropTypes.func, // onClick is a function and required
-};
+}
 
 // // Define prop types for the ProductCard component
 MinUtilitiesProductCard.propTypes = {
@@ -108,4 +109,4 @@ MinUtilitiesProductCard.propTypes = {
   imageUrl: PropTypes.string.isRequired, // imageUrl is a string and required
   alt: PropTypes.string,
   onClick: PropTypes.func, // onClick is a function and required
-};
+}

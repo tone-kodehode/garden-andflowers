@@ -85,7 +85,7 @@ FlowerProductCard.propTypes = {
    imageUrl: PropTypes.string.isRequired, // imageUrl is a string and required
    alt: PropTypes.string,
    onClick: PropTypes.func, // onClick is a function and required
-};
+}
 
 // // Define prop types for the ProductCard component
 PlantersProductCard.propTypes = {
@@ -97,7 +97,7 @@ PlantersProductCard.propTypes = {
   imageUrl: PropTypes.string.isRequired, // imageUrl is a string and required
   alt: PropTypes.string,
   onClick: PropTypes.func, // onClick is a function and required
-};
+}
 
 // // Define prop types for the ProductCard component
 UtilitiesProductCard.propTypes = {
@@ -109,5 +109,5 @@ UtilitiesProductCard.propTypes = {
   imageUrl: PropTypes.string.isRequired, // imageUrl is a string and required
   alt: PropTypes.string,
   onClick: PropTypes.func, // onClick is a function and required
-};
+}
 

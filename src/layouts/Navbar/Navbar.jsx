@@ -12,11 +12,7 @@ import {
   PlantersNavLink,
   UtilitiesNavLink,
   GardenBlogNavLink,
-  AboutNavLink,
 } from '../../routes/NavLink';
-
-
-
 
 
 import NavbarStyles from '/src/styles/NavbarStyles/Navbar.module.css'
@@ -24,31 +20,15 @@ import NavbarStyles from '/src/styles/NavbarStyles/Navbar.module.css'
 const Navbar = () => {
   
   return (
-    < div className='main'>
-    <div className={NavbarStyles.container}>
-      <div className={NavbarStyles.navContainer}>
-        <div className={NavbarStyles.left}> 
-          
-          
-        </div>
-        
-        
-      </div>
-    </div>
-
+    <div className='main'>
 
     <div className={NavbarStyles.container}>
       <div className={NavbarStyles.navContainer}>
         <div className={NavbarStyles.left}> 
-        <div className={NavbarStyles.menuLink}>
-            <Logo />
-          </div>
+          <Logo />
         </div>
+        
         <div className={NavbarStyles.center}>
-          {/* <div className={NavbarStyles.menu}>REGISTER</div>
-          <div className={NavbarStyles.menu}>SIGN IN</div> */}
-          {/* <span className={NavbarStyles.language}>EN</span>  */}
-
           <div className={NavbarStyles.menuLink}>
             <GardenAndFlowersNavLink />
           </div>
@@ -63,30 +43,23 @@ const Navbar = () => {
           </div>
           <div className={NavbarStyles.menuLink}>
             <GardenBlogNavLink />
-          </div>
-          <div className={NavbarStyles.menuLink}>
-            <AboutNavLink />
-          </div>
-             
+          </div>          
         </div>
         
-        <div className={NavbarStyles.right}>
-        
-          
+        <div className={NavbarStyles.right}> 
           <div className={NavbarStyles.menuLink}>
             <SearchButton />
-        </div>
+          </div>
           <div className={NavbarStyles.menuLink}>
-              <CartButton />
-        </div>
-        <div className={NavbarStyles.menuLink}>
-              <SignInButton />
-        </div>          
+            <CartButton />
+          </div>
+          <div className={NavbarStyles.menuLink}>
+            <SignInButton />
+          </div>       
         </div>
       </div>
     </div>
 
-    
     </div>
     
   )

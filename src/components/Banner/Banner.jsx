@@ -50,7 +50,7 @@ export const ImageBanner = ({ imageUrl, alt, topLeftTagline, buttons }) => {
 TextBanner.propTypes = {
   title: PropTypes.string.isRequired, // title is a required string prop
   paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired, // paragraphs is an array of strings (required)
-};
+}
 
 // Define PropTypes for ImageBanner component
 ImageBanner.propTypes = {

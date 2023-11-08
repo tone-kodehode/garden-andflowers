@@ -8,10 +8,10 @@ import { useState, useEffect } from "react";
 
 
 export const useShuffleItems = (listArray) => {
-    const [shuffledItems, setShuffledItems] = useState([]);
+    const [shuffledItems, setShuffledItems] = useState([])
 
     useEffect(() => {
-       const shuffledArray = listArray.sort(() => Math.random() - 0.5);
+       const shuffledArray = listArray.sort(() => Math.random() - 0.5)
        setShuffledItems(shuffledArray)
     }, [listArray])
 

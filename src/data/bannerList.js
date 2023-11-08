@@ -21,6 +21,9 @@
 
 import TulipBannerImg from '../assets/ImgBanner/tulip1904-804.jpg'
 import PeonyBannerImg from '../assets/ImgBanner/peony1904-804.jpg'
+import BlogBannerImg from '../assets/ImgBanner/PhotobyBarthelemyRigaudonUnsplash.jpg'
+import PlantersBannerImg from '../assets/ImgBanner/PhotobyLinaSimonianonUnsplash.jpg'
+import UtilitiesBanner from '../assets/ImgBanner/pexelscottonbrostudio.jpg'
 
 
 
@@ -60,7 +63,7 @@ export const bannerList = {
             type: 'image',
             className: 'imgSection',
             imageUrl: PeonyBannerImg, 
-            alt: 'Page not found',
+            alt: 'Page Not Found',
             title: 'Page not fond',
             topLeftTagline: 
             [
@@ -85,6 +88,57 @@ export const bannerList = {
             [
                 "Outdoor planters, are a great way to make custom built designs on your patio and garden area. Group pots of various shapes, sizes, and complementary styles. Flowers, trees, vegetables and herbs, adapt amazingly to growing in planters. Plants in pots need some care and maintenance to ensure your plants have the right soil to thrive, container gardening is much easier to master!",
                 "Short on space and a bit of sunlight, you can still embrace the world of gardening. In a driveway or a balcony, outdoor planters in a variety, create a stunning display. Pick a palette that works with the house colors and stick to it in all your containers. Regardless of your preference, planters is a fantastic way to experiment with planting and design. Mix different textures, shapes, and colors to heighten visual interest. Want to show off a cool container? Pair it with plainer plants.",
+            ],
+        },
+        {
+            id: 4,
+            type: 'image',
+            className: "imgSection",
+            imageUrl: BlogBannerImg, 
+            alt: 'Garden Blog, Planters and Flowers Image',
+            title: 'Garden Blog',
+            topLeftTagline: 'Methods, Ideas, and Gardening Hacks',
+            buttons: [
+                {
+                  label: 'See Our Planters',
+                  url: '/planters',
+                  position: 'topLeft',
+                  className: "buttonContainer",
+                },
+            ],
+        },
+        {
+            id: 5,
+            type: 'image',
+            className: "imgSection",
+            imageUrl: PlantersBannerImg, 
+            alt: 'Planters, Planters and flowers image',
+            title: 'Planters',
+            topLeftTagline: 'Text',
+            buttons: [
+                {
+                  label: 'See Our Utilities',
+                  url: '/',
+                  position: 'topLeft',
+                  className: "buttonContainer",
+                },
+            ],
+        },
+        {
+            id: 6,
+            type: 'image',
+            className: "imgSection",
+            imageUrl: UtilitiesBanner, 
+            alt: 'Garden utility image',
+            title: 'Utility',
+            topLeftTagline: 'Gardening Utilities',
+            buttons: [
+                {
+                  label: 'See Our Flowers',
+                  url: '/flowers',
+                  position: 'topLeft',
+                  className: "buttonContainer",
+                },
             ],
         },
     ]

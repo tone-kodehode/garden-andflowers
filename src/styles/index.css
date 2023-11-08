@@ -16,6 +16,7 @@ body {
   background-color: var(--lightColor);
 }
 
+
 body {
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
@@ -29,8 +30,24 @@ body {
 }
 
 .main {
-  margin: 0 80px;
+  padding: 0 80px;
 }
+
+.margin {
+  margin: 80px 0;
+}
+
+.grayBody {
+  background-color: var(--GrayWhite);
+}
+
+.footerBody {
+  background-color: var(--GrayGreenLight);
+  /* border: 1px solid pink;  */
+}
+
+
+
 
 /* h1 {
   font-size: 3em;

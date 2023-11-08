@@ -43,21 +43,21 @@
 }
  
 .input:focus {
-    border: 1px solid var(--Blue);
+    border: 1px solid var(--Green);
 } 
 
 .logInButton {
     margin: 20px 0;
     width: 96%;
-    background-color: var(--Blue);
+    background-color: var(--GreenPastelDark);
     border: none;
     /* padding: 15px 20px; */
     cursor: pointer;
 }
 
 .logInButton:hover {
-    background-color: var(--BlueTint3);
-    color: var(--DarkColor);
+    background-color: var(--Green);
+    color: var(--white);
 }
 
 .link  {  
@@ -74,7 +74,3 @@
         padding: 1.1em 2.5em;
     }
 }
-
- /* 17.6  40 */
-
-

@@ -1,5 +1,8 @@
 import { useCounter } from "../../hooks/useCounter"
 
+import AddRoundedIcon from '@mui/icons-material/AddRounded';
+import RemoveRoundedIcon from '@mui/icons-material/RemoveRounded';
+
 import CounterStyles from '../../styles/ButtonsStyles/Counter.module.css'
 
 export const CounterButtons = () => {
@@ -20,9 +23,19 @@ export const CounterButtons = () => {
   return (
     <section className={CounterStyles.contaner} >
       <div className={CounterStyles.counter} >
-        <button className={CounterStyles.counterButtton} onClick={subtract}>-</button>
+        <div className={CounterStyles.counterButtton} onClick={subtract}>
+          <RemoveRoundedIcon 
+            sx={{ fontSize: 25 }}
+            color="action"
+          />
+        </div>
         <div className={CounterStyles.count} >{count}</div>
-        <button className={CounterStyles.counterButtton} onClick={add}>+</button>
+        <div className={CounterStyles.counterButtton} onClick={add}>
+          <AddRoundedIcon 
+            sx={{ fontSize: 25 }}
+            color="action"
+          />
+        </div>
       </div>
     </section>
   )

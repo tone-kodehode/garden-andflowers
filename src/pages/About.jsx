@@ -1,10 +1,10 @@
 
 
-
-
 export const About = () => {
   return (
-    <div className="main">About</div>
+    <div className="main">
+  
+    </div>
   )
 }
 

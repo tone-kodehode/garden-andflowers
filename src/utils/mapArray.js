@@ -6,5 +6,5 @@
 
 // iterat through each element, applie the callback, creating a new array, return transformed element collected
 export default function mapArray(array, callback) {
-    return array.map(callback);
+    return array.map(callback)
 }

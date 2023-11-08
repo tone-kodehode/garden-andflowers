@@ -1,26 +1,27 @@
-.ShowHideButton {
-    margin-top: 30px;
-    font-size: 18px;
-    font-size: 300;
+.ShowHide {
+    /* margin-top: 30px; */
+    font-size: 16px;
+
     border-radius: 8px;
-    border: 1px solid transparent;
     padding: 0.6em 1.2em;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 300;
     font-family: inherit;
-    background-color: transparent;
+    background-color: var(--GrayGreenLight);
     cursor: pointer;
     transition: border-color 0.25s;
-    border-color: rgb(67, 125, 67);
+    /* border-color: rgb(67, 125, 67); */
   }
   
   
-  .ShowHideButton:hover {
+  .ShowHide:hover {
     background-color: rgb(67, 125, 67);
     color: whitesmoke;
     text-shadow: 5px 5px 10px black;
   }
-  /* button:focus,
-  button:focus-visible {
+ /* button:focus,
+ button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
-  } */
+  }  */
+
+ 

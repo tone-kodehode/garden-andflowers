@@ -1,34 +1,43 @@
 import PropTypes from 'prop-types'
+import { CounterButtons } from '../Button/CounterButtons';
 
-import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
-import LocalFloristRoundedIcon from '@mui/icons-material/LocalFloristRounded';
+//import LocalFloristRoundedIcon from '@mui/icons-material/LocalFloristRounded';
 import { ShowHideButton } from '../Button/ShowHideButton';
 import ProductPageStyles from '../../styles/ProductPageStyles/ProductPage.module.css'
 
-export const ProductPage = ({id, imageUrl, alt, title, climateZone, category, shortDescription, price, currency, cycle, description}) => {
+export const ProductPage = ({id, imageUrl, alt, title, shortDescription, price, currency, description}) => {
   return (
     <section className={ProductPageStyles.pageContainer} >
       <div className={ProductPageStyles.productCard} id={id}>
         <article className={ProductPageStyles.article}>
           <img className={ProductPageStyles.imageUrl} src={imageUrl} alt={alt} />
         </article>
-        <article className={ProductPageStyles.article}>
+
+        <article className={ProductPageStyles.infoarticle}>
           <h2 className={ProductPageStyles.title}>{title}</h2>
           <section className={ProductPageStyles.categoryContainer}>
             <p className={ProductPageStyles.id}>ID {id}</p>
-            <p className={ProductPageStyles.climateZone}>{climateZone}</p>
-            <p className={ProductPageStyles.category}>{category}</p>
+            {/* <p className={ProductPageStyles.climateZone}>{climateZone}</p>
+            <p className={ProductPageStyles.category}>{category}</p> */}
           </section>
+
           <p className={ProductPageStyles.shortDescription}>{shortDescription}</p>
+
           <section className={ProductPageStyles.cartContainer}>
-            <p className={ProductPageStyles.price}>{price}&nbsp;</p>
-            <span className={ProductPageStyles.currency}>{currency}</span>
-            <AddShoppingCartRoundedIcon />
+            <div className={ProductPageStyles.priceContainer}>
+              <p className={ProductPageStyles.price}>{price}&nbsp;</p>
+              <span className={ProductPageStyles.currency}>{currency}</span>
+            </div>
+            
+            <div>
+              <CounterButtons />
+            </div>
+            
           </section>
           <section className={ProductPageStyles.categoryContainer}>
-            <p className={ProductPageStyles.cycle}><LocalFloristRoundedIcon /> {cycle}</p>
+            {/* <p className={ProductPageStyles.cycle}><LocalFloristRoundedIcon /> {cycle}</p> */}
           </section>
-          <ShowHideButton content={<p className={ProductPageStyles.description}>{description}</p>} />
+          <ShowHideButton content={<p className={ProductPageStyles.ShowHide}>{description}</p>} />
         </article>
       </div>
     </section>

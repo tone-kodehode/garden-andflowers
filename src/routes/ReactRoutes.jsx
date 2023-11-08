@@ -13,12 +13,16 @@ import { FlowerProductPage } from '../pages/FlowerProductPage'
 import { Planters } from '../pages/Planters'
 import { Utilities } from '../pages/Utilities'
 import { GardenBlog } from '../pages/GardenBlog'
-import { About } from '../pages/About'
+
 import { Cart } from '../pages/Cart'
 import { SignIn } from '../pages/SignIn'
+import { SearchResult } from '../pages/SearchResult'
 import { CreateAccount } from '../components/Forms/CreateAccountForm'
 import { ForgotPassword } from '../pages/ForgotPassword'
+import { About } from '../pages/About'
+import { Contact } from '../pages/Contact'
 import { NoPage } from '../pages/NoPage'
+
 
 
 export const ReactRoutes = () => {
@@ -43,9 +47,13 @@ export const ReactRoutes = () => {
             
               <Route path="/cart" element={<Cart />}/> 
               <Route path='/signin' element={<SignIn />} />
-              <Route path="/about" element={<About />} />
+              <Route path='/searchresult' element={<SearchResult />} />
+              
               <Route path='/createaccount' element={<CreateAccount />} />
               <Route path='/forgotpassword' element={<ForgotPassword />} />
+
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NoPage />} />
             </Route> 
           </Routes>

@@ -1,14 +1,13 @@
 import FaceRoundedIcon from '@mui/icons-material/FaceRounded';
-import { useNavigate } from 'react-router-dom';
+import { useUrlButton } from '../../hooks/useUrlButton';
 
 export const SignInButton = () => {
-  const navigate = useNavigate()
-  const handleClick = () => navigate('/signin')
+  const navigateToSignIn = useUrlButton()
 
   return (
     <div>
         <FaceRoundedIcon 
-            onClick={handleClick} 
+            onClick={() => navigateToSignIn('/signin')} 
             sx={{ fontSize: 30 }}
             color="action"
         />

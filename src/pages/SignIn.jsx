@@ -12,5 +12,3 @@ export const SignIn = () => {
 }
 
 
-//   Trouble logging in
-
